@@ -1,10 +1,8 @@
-
-  
 .heading{
     text-align:center;
     font-family: monospace;
     font-size: 50px;
-    color: darkblue;
+    color: rgba(146, 3, 3, 0.473);
 }
 .desc{
     text-align: center;
@@ -21,4 +19,26 @@ input[type= text]:focus{
 }
 textarea:focus{
     background-color: rgb(231, 225, 214);
+}
+
+input[type=text],input[type=email], select, textarea{
+	width:100%;
+	padding:10px;
+	border: 1px solid #3b2901;
+	border-radius:6px;
+	box-sizing:border-box;
+	margin-top:5px;
+	margin-bottom:15px;	
+}
+
+.grid{
+	position:absolute;	
+	top:200px;
+	background-color:#b4911b;		
+	border-radius:10px;	
+	margin:auto;
+	width :50%;	
+	height:600px;
+	padding:20px;
+	left:20%;
 }
