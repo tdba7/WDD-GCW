@@ -1,13 +1,17 @@
 .heading{
-    text-align:center;
+    text-align: center;
+    
     font-family: monospace;
     font-size: 50px;
     color: darkblue;
+    top: 100px;
+    position:absolute;
 }
 .desc{
     text-align: center;
     font-size: 20px;
-    color:rgb(143, 59, 70)
+    color:rgb(143, 59, 70);
+    position:absolute;
 }
 
 label,input{
@@ -46,4 +50,7 @@ input[type=text],input[type=email], select, textarea{
 	height:600px;
 	padding:20px;
 	left:25%;
+}
+#position1{
+    position: relative;
 }
