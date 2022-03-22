@@ -1,1 +1,0 @@
-All javascript files goes here
