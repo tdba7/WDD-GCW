@@ -41,7 +41,7 @@ input[type=text],input[type=email], select, textarea{
 }
 
 .grid{
-	position:absolute;	
+	position:relative;	
 	top:200px;
 	background-color:#daa520;		
 	border-radius:10px;	
@@ -53,4 +53,8 @@ input[type=text],input[type=email], select, textarea{
 }
 #position1{
     position: relative;
+}
+
+.top{
+    padding-top: 250px;
 }
