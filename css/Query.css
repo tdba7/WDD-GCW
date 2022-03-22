@@ -2,7 +2,7 @@
     text-align:center;
     font-family: monospace;
     font-size: 50px;
-    color: rgba(146, 3, 3, 0.473);
+    color: darkblue;
 }
 .desc{
     text-align: center;
@@ -17,6 +17,11 @@ label,input{
 input[type= text]:focus{
     background-color: rgb(231, 225, 214);
 }
+
+input[type = email]:focus{
+    background-color: rgb(231, 225, 214);
+}
+
 textarea:focus{
     background-color: rgb(231, 225, 214);
 }
@@ -24,7 +29,7 @@ textarea:focus{
 input[type=text],input[type=email], select, textarea{
 	width:100%;
 	padding:10px;
-	border: 1px solid #3b2901;
+	border: 1px solid #614404;
 	border-radius:6px;
 	box-sizing:border-box;
 	margin-top:5px;
