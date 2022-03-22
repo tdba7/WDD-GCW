@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Query</title>
     <link rel="stylesheet" type="text/css" href="./css/main.css">
+    <link rel="stylesheet" type="text/css" href="./css/Query.css">
     <title>Query</title>
 </head>
 <body>
@@ -30,36 +31,38 @@
         <h1 class="heading">CONTACT US</h1>
         <P class="desc">Email us with any questions or queries, we would be happy to answer your questions.</P>
     </div>
-    <form>
-        <label for="name">Name</label><br>
-        <input type="text" name="customerName" id="name" placeholder="Enter your name"><br>
-    
-        <label for="surname">Sure Name</label><br>
-        <input type="text" name="lastName" id="surname" placeholder="Enter your surname"><br>
-    
-        <label for="address">Address</label><br>
-        <input type="text" name="customerAddress" id="address" placeholder="Enter your address"><br>
-
-        <label for="mail">E-mail address</label><br>
-        <input type="email" name="mailAddress" id="mail" placeholder="Enter your E-mail address"><br>
-
-        <label for="details">Query Details</label><br>
-        <textarea name="query" id="details" cols="30" rows="10"></textarea><br>
-
-        <label for="theme">Select a theme</label><br>
-        <input type="radio" name="choose" id="theme1" value="theme1">
-        <label for="theme1">theme1</label><br>
-        <input type="radio" name="choose" id="theme2" value="theme2">
-        <label for="theme2">theme2</label><br>
-        <input type="radio" name="choose" id="theme3" value="theme3">
-        <label for="theme3">theme3</label><br>
-        <input type="radio" name="choose" id="theme4" value="theme4">
-        <label for="theme4">theme4</label><br>
-
-        <p id="check"></p>
+    <div class="grid">
+        <form>
+            <label for="name">Name</label><br>
+            <input type="text" name="customerName" id="name" placeholder="Enter your name"><br>
         
-        <button name="button1" value="show and clear input"onclick="query(this.form)">View Query</button>
-        <button name="button2" value="check2" id="check2" onclick="myfunction()">Check</button>
+            <label for="surname">SurName</label><br>
+            <input type="text" name="lastName" id="surname" placeholder="Enter your surname"><br>
+        
+            <label for="address">Address</label><br>
+            <input type="text" name="customerAddress" id="address" placeholder="Enter your address"><br>
+
+            <label for="mail">E-mail address</label><br>
+            <input type="email" name="mailAddress" id="mail" placeholder="Enter your E-mail address"><br>
+
+            <label for="details">Query Details</label><br>
+            <textarea name="query" id="details" cols="30" rows="10"></textarea><br>
+
+            <label for="theme">Select a theme</label><br>
+            <input type="radio" name="choose" id="theme1" value="theme1">
+            <label for="theme1">theme1</label><br>
+            <input type="radio" name="choose" id="theme2" value="theme2">
+            <label for="theme2">theme2</label><br>
+            <input type="radio" name="choose" id="theme3" value="theme3">
+            <label for="theme3">theme3</label><br>
+
+            <p id="check"></p>
+            
+            <button name="button1" value="show and clear input"onclick="query(this.form)">View Query</button>
+            <button name="button2" value="check2" id="check2" onclick="myfunction()">Check</button>
+        </form>
+    </div>
+        
 
         <script type="text/javascript" src="./javascript/query.js"></script>
 </body>

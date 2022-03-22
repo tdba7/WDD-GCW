@@ -1,5 +1,3 @@
-
-  
 .heading{
     text-align:center;
     font-family: monospace;
@@ -13,12 +11,39 @@
 }
 
 label,input{
-    padding: 5px;
+    padding: 3px;
     margin:5px
 }
 input[type= text]:focus{
     background-color: rgb(231, 225, 214);
 }
+
+input[type = email]:focus{
+    background-color: rgb(231, 225, 214);
+}
+
 textarea:focus{
     background-color: rgb(231, 225, 214);
+}
+
+input[type=text],input[type=email], select, textarea{
+	width:100%;
+	padding:10px;
+	border: 1px solid #614404;
+	border-radius:6px;
+	box-sizing:border-box;
+	margin-top:5px;
+	margin-bottom:15px;	
+}
+
+.grid{
+	position:absolute;	
+	top:200px;
+	background-color:#daa520;		
+	border-radius:10px;	
+	margin:auto;
+	width :50%;	
+	height:600px;
+	padding:20px;
+	left:25%;
 }
