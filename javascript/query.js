@@ -1,6 +1,13 @@
-function query(frm){
+function query(){
 
-    if(frm.customerName.value == "")
+    var aname = document.getElementById("customerName");
+
+    if (aname.value.length ==""){
+        alert("Name Required!")
+    }
+   
+   
+   /* if(frm.customerName.value == "")
         alert("Name Required!")
     if (frm.lastName.value == "")
         alert("Surname Required!")
@@ -10,5 +17,5 @@ function query(frm){
         alert("Address  Required!")
 }
 function myfunction(){     
-    document.getElementById("check").innerHTML = "Name: "+ document.getElementById("name").value+"\nSurname: "+document.getElementById("surname").value+"\nEmail Adress: "+document.getElementById("mail").value+"\nAdress: "+document.getElementById("address").value + "\n Details:" + document.getElementById("details").value}
+    document.getElementById("check").innerHTML = "Name: "+ document.getElementById("name").value+"\nSurname: "+document.getElementById("surname").value+"\nEmail Adress: "+document.getElementById("mail").value+"\nAdress: "+document.getElementById("address").value + "\n Details:" + document.getElementById("details").value}*/
         
