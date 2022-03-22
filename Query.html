@@ -5,27 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Query</title>
-
-    <script>
-        function query(frm){
-
-            if(frm.customerName.value == "")
-                alert("Name Required!")
-            if (frm.lastName.value == "")
-                alert("Surname Required!")
-            if (frm.mailAddress.value == "")
-                alert("E-mail Address is required!")
-            if (frm.customerAddress.value == "")
-                alert("Address  Required!")
-        }
-        function myfunction(){     
-            document.getElementById("check").innerHTML = "Name: "+ document.getElementById("name").value+"\nSurname: "+document.getElementById("surname").value+"\nEmail Adress: "+document.getElementById("mail").value+"\nAdress: "+document.getElementById("address").value + "\n Details:" + document.getElementById("details").value}
-                
-    </script>
     <link rel="stylesheet" type="text/css" href="./css/main.css">
     <title>Query</title>
 </head>
 <body>
+    
+    <header>
+        <div class="logo">
+            <a href="/index.html"><img src="/assets/logo1.png" alt="logo"></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="aboutus.html">About</a></li>
+                <li><a href="products.html">Store</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+                <li><a href="Query.html">Contact Us</a></li>
+                <li><a href="sitemap.html">Sitemap</a></li>
+            </ul>
+        </nav>
+    </header>
+
     <div class="top">
         <h1 class="heading">CONTACT US</h1>
         <P class="desc">Email us with any questions or queries, we would be happy to answer your questions.</P>
@@ -61,5 +61,9 @@
             <button name="button2" value="check2" id="check2" onclick="myfunction()">Check</button>
         </form>
     </div>
+        <button name="button1" value="show and clear input"onclick="query(this.form)">View Query</button>
+        <button name="button2" value="check2" id="check2" onclick="myfunction()">Check</button>
+
+        <script type="text/javascript" src="./javascript/query.js"></script>
 </body>
 </html>
