@@ -4,24 +4,61 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Query</title>
+
+    <script>
+        function query(frm){
+
+            if(frm.customerName.value == "")
+                alert("Name Required!")
+            if (frm.lastName.value == "")
+                alert("Surname Required!")
+            if (frm.mailAddress.value == "")
+                alert("E-mail Address is required!")
+            if (frm.customerAddress.value == "")
+                alert("Address  Required!")
+        }
+        function myfunction(){     
+            document.getElementById("check").innerHTML = "Name: "+ document.getElementById("name").value+"\nSurname: "+document.getElementById("surname").value+"\nEmail Adress: "+document.getElementById("mail").value+"\nAdress: "+document.getElementById("address").value + "\n Details:" + document.getElementById("details").value}
+                
+    </script>
     <link rel="stylesheet" type="text/css" href="./css/main.css">
-    <title>Home</title>
+    <title>Query</title>
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <a href="/index.html"><img src="/assets/logo1.png" alt="logo"></a>
-        </div>
-        <nav>
-            <ul>
-                <li><a class="active" href="index.html">Home</a></li>
-                <li><a href="aboutus.html">About</a></li>
-                <li><a href="products.html">Store</a></li>
-                <li><a href="quiz.html">Quiz</a></li>
-                <li><a href="Query.html">Contact Us</a></li>
-                <li><a href="sitemap.html">Sitemap</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div class="top">
+        <h1 class="heading">CONTACT US</h1>
+        <P class="desc">Email us with any questions or queries, we would be happy to answer your questions.</P>
+    </div>
+    <form>
+        <label for="name">Name</label><br>
+        <input type="text" name="customerName" id="name" placeholder="Enter your name"><br>
+    
+        <label for="surname">Sure Name</label><br>
+        <input type="text" name="lastName" id="surname" placeholder="Enter your surname"><br>
+    
+        <label for="address">Address</label><br>
+        <input type="text" name="customerAddress" id="address" placeholder="Enter your address"><br>
+
+        <label for="mail">E-mail address</label><br>
+        <input type="email" name="mailAddress" id="mail" placeholder="Enter your E-mail address"><br>
+
+        <label for="details">Query Details</label><br>
+        <textarea name="query" id="details" cols="30" rows="10"></textarea><br>
+
+        <label for="theme">Select a theme</label><br>
+        <input type="radio" name="choose" id="theme1" value="theme1">
+        <label for="theme1">theme1</label><br>
+        <input type="radio" name="choose" id="theme2" value="theme2">
+        <label for="theme2">theme2</label><br>
+        <input type="radio" name="choose" id="theme3" value="theme3">
+        <label for="theme3">theme3</label><br>
+        <input type="radio" name="choose" id="theme4" value="theme4">
+        <label for="theme4">theme4</label><br>
+
+        <p id="check"></p>
+        
+        <button name="button1" value="show and clear input"onclick="query(this.form)">View Query</button>
+        <button name="button2" value="check2" id="check2" onclick="myfunction()">Check</button>
 </body>
 </html>
