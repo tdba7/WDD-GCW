@@ -7,9 +7,9 @@
     <title>Query</title>
 
     <script>
-        function viewquery(frm){
+        function query(frm){
 
-            if(frm.customertName.value == "")
+            if(frm.customerName.value == "")
                 alert("Name Required!")
             if (frm.lastName.value == "")
                 alert("Surname Required!")
@@ -56,7 +56,7 @@
 
         <p id="check"></p>
         
-        <button name="button1" value="show and clear input"onclick="viewquery(this.form)">View Query</button>
+        <button name="button1" value="show and clear input"onclick="query(this.form)">View Query</button>
         <button name="button2" value="check2" id="check2" onclick="myfunction()">Check</button>
 </body>
 </html>
