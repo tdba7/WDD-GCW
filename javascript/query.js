@@ -34,14 +34,14 @@ function query(){
         hide.style.display = "none";
     
     var Element = document.createElement("form");
-    Element.setAttribute("id","ViewDetails");
+    Element.setAttribute("id","View");
     Element.setAttribute("action","mailto:shehanthi2001@gmail.com")
     Element.setAttribute("method","post");
     Element.setAttribute("enctype","text/plain");
 
     var ele = document.createElement("textarea");
-    ele.setAttribute("id","INFO")
-    ele.setAttribute("name","Info:");
+    ele.setAttribute("id","summary")
+    ele.setAttribute("name","summary:");
 
     var txt1 = document.createTextNode(`\nName :${document.getElementById("name").value}\n`);  
 	ele.appendChild(txt1);
@@ -86,26 +86,12 @@ function query(){
 	document.body.appendChild(Element);	
 	
 }
-//functioning Edit Button
+//Edit Button
 function Edit(){
 	
-	var hide2 = document.querySelector("#ViewDetails");
+	var hide2 = document.querySelector("#View");
 	hide2.remove();	
 	
 	var show = document.querySelector("#grid");
 	show.style.display = 'block';
 }	
-
-   
-   /* if(frm.customerName.value == "")
-        alert("Name Required!")
-    if (frm.lastName.value == "")
-        alert("Surname Required!")
-    if (frm.mailAddress.value == "")
-        alert("E-mail Address is required!")
-    if (frm.customerAddress.value == "")
-        alert("Address  Required!")
-}
-function myfunction(){     
-    document.getElementById("check").innerHTML = "Name: "+ document.getElementById("name").value+"\nSurname: "+document.getElementById("surname").value+"\nEmail Adress: "+document.getElementById("mail").value+"\nAdress: "+document.getElementById("address").value + "\n Details:" + document.getElementById("details").value}*/
-        
