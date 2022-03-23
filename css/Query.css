@@ -1,0 +1,69 @@
+h1{
+    text-align: center;
+    font-family: monospace;
+    font-size: 50px;
+    color: darkblue;
+    
+}
+.desc{
+    text-align: center;
+    font-size: 17px;
+    color:rgb(143, 59, 70);
+    
+}
+
+label,input{
+    padding: 3px;
+    margin:5px
+}
+input[type= text]:focus{
+    background-color: rgb(231, 225, 214);
+}
+
+input[type = email]:focus{
+    background-color: rgb(231, 225, 214);
+}
+
+textarea:focus{
+    background-color: rgb(231, 225, 214);
+}
+
+input[type=text],input[type=email], select, textarea{
+	width:100%;
+	padding:5px;
+	border: 1px solid #614404;
+	border-radius:6px;
+	box-sizing:border-box;
+	margin-top:5px;
+	margin-bottom:15px;	
+}
+
+.grid{
+	position:relative;	
+	top:200px;
+	background-color:#daa520;		
+	border-radius:10px;	
+	margin:auto;
+	width :50%;	
+	height:580px;
+	padding:15px;
+	left:25%;
+}
+#position1{
+    position: relative;
+}
+
+<<<<<<< HEAD
+button{
+    background-color: #614404;
+    color: antiquewhite;
+    padding:3px;
+    border-radius: 4px;
+    float:left;
+    position: relative;
+    margin-top: 5px;
+=======
+.top{
+    padding-top: 250px;
+>>>>>>> 83507e851238bf22653a189edccf3e37b104d61d
+}

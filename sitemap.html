@@ -4,31 +4,87 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site Map</title>
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
+    <link rel="stylesheet" type="text/css" href="./css/sitemap.css">
+    <title>Sitemap</title>
 </head>
 <body>
-    <svg width="2000" height="2000">
-        <a xlink:href="https://en.wikipedia.org/wiki/Bullseye_(target)"> <rect x="50" y="300" rx="20" ry="20" width="300" height="100" style="fill:rgb(0,0,255);stroke-width:3;stroke:rgb(0,0,0)" />
-         <text x="180" y="350" fill="black">woof</text>
-        </a>
-         <rect x="400" y="300" rx="20" ry="20" width="300" height="100" style="fill:rgb(0,0,255);stroke-width:3;stroke:rgb(0,0,0)" />
-         <text x="530" y="350" fill="black">woof</text>
-          <rect x="750" y="300" rx="20" ry="20" width="300" height="100" style="fill:rgb(0,0,255);stroke-width:3;stroke:rgb(0,0,0)" />
-          <text x="880" y="350" fill="black">woof</text>
-          <rect x="750" y="0" rx="20" ry="20" width="300" height="100" style="fill:rgb(0,0,255);stroke-width:3;stroke:rgb(0,0,0)" />
-          <text x="880" y="50" fill="black">woof</text>
-          <rect x="1100" y="300" rx="20" ry="20" width="300" height="100" style="fill:rgb(0,0,255);stroke-width:3;stroke:rgb(0,0,0)" />
-          <text x="1230" y="350" fill="black">woof</text>
-          <rect x="1450" y="300" rx="20" ry="20" width="300" height="100" style="fill:rgb(0,0,255);stroke-width:3;stroke:rgb(0,0,0)" />
-          <text x="1580" y="350" fill="black">woof</text>
-          
-          <line x1="200" y1="200" x2="200" y2="300" style="stroke:rgb(255,0,0);stroke-width:2" />
-          <line x1="550" y1="200" x2="550" y2="300" style="stroke:rgb(255,0,0);stroke-width:2" />
-          <line x1="900" y1="200" x2="900" y2="300" style="stroke:rgb(255,0,0);stroke-width:2" />
-          <line x1="1230" y1="200" x2="1230" y2="300" style="stroke:rgb(255,0,0);stroke-width:2" />
-          <line x1="1600" y1="200" x2="1600" y2="300" style="stroke:rgb(255,0,0);stroke-width:2" />
-          <line x1="1600" y1="200" x2="200" y2="200" style="stroke:rgb(255,0,0);stroke-width:2" />
-          <line x1="900" y1="200" x2="900" y2="100" style="stroke:rgb(255,0,0);stroke-width:2" />
-       </svg>  
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="./assets/logo1.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a class="active" href="index.html">Home</a></li>
+                    <li><a href="aboutus.html">About</a></li>
+                    <li><a href="products.html">Store</a></li>
+                    <li><a href="quiz.html">Quiz</a></li>
+                    <li><a href="Query.html">Contact Us</a></li>
+                    <li><a href="sitemap.html">Sitemap</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+    </section>
+    
+
+    <section class="sitemap">
+        <h1>Sitemap</h1>
+        <svg id="svgmap" height="490" width="100%">
+            <g id="shape1" >
+                <rect x="627" y="10" height="65" width="200" stroke="black" fill="#daa520" stroke-width="2" />
+                <text fill="black" font-size="25" x="730" y="47" text-anchor="middle"><a class="ex1 ex2" href="index.html">Home</a></text>
+
+            </g>
+            <g id="line1" >
+                <line id="shapeId2" stroke="grey" stroke-width="2" x1="730" y1="75" x2="730" y2="135"></line>
+                
+            </g>
+            <g id="line2">
+                <line id="shapeId3" stroke="grey" stroke-width="2" x1="730" y1="135" x2="300" y2="135"></line> 
+                <line id="shapeId4" stroke="grey" stroke-width="2" x1="730" y1="135" x2="1160" y2="135"></line>
+            </g>	
+            <g id="line3">
+                <line id="shapeId5" stroke="grey" stroke-width="2" x1="730" y1="135" x2="730" y2="195"></line>
+            </g>
+            <g id="line4">
+                    <line id="shapeId6" stroke="grey"  stroke-width="2" x1="300" y1="135" x2="300" y2="195"></line>
+            </g>
+            <g id="line5">
+                    <line id="shapeId7" stroke="grey" stroke-width="2" x1="515" y1="135" x2="515" y2="195"></line>
+            </g>
+            <g id="line6">
+                    <line id="shapeId8" stroke="grey" stroke-width="2" x1="945" y1="135" x2="945" y2="195"></line>
+            </g>
+            <g id="line7">
+                    <line id="shapeId9" stroke="grey" stroke-width="2" x1="1160" y1="135" x2="1160" y2="195"></line>
+            </g>
+            <g id="shape2" >
+                <rect x="210" y="195" height="65" width="180" stroke="black" fill="#daa520" stroke-width="2" />
+                <text fill="black" font-size="25" x="300" y="235"  text-anchor="middle"><a class="ex1 ex2" href="aboutus.html">About</a></text>
+
+            </g>
+            <g id="shape3" >
+                <rect x="425" y="195" height="65" width="180" stroke="black" fill="#daa520" stroke-width="2" />
+                <text fill="black" font-size="25" x="515" y="235"  text-anchor="middle"><a class="ex1 ex2" href="products.html">Store</a></text>
+
+            </g>
+            <g id="shape4" >
+                <rect x="640" y="195" height="65" width="180" stroke="black" fill="#daa520" stroke-width="2" />
+                <text fill="black" font-size="25" x="730" y="235"  text-anchor="middle"><a class="ex1 ex2" href="quiz.html">Quiz</a></text>
+
+            </g>
+            <g id="shape5" >
+                <rect x="855" y="195" height="65" width="180" stroke="black" fill="#daa520" stroke-width="2" />
+                <text fill="black" font-size="25" x="945" y="235"  text-anchor="middle"><a class="ex1 ex2" href="Query.html">Contact Us</a></text>
+
+            </g>
+            <g id="shape6" >
+                <rect x="1070" y="195" height="65" width="180" stroke="black" fill="#daa520" stroke-width="2" />
+                <text fill="black" font-size="25" x="1160" y="235"  text-anchor="middle"><a class="ex1 ex2" href="sitemap.html">Sitemap</a></text>
+
+            </g>
+        </svg>
+    </section>
 </body>
 </html>

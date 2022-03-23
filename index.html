@@ -4,22 +4,189 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="./css/mainstyles.css">
     <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
 </head>
 <body>
+<section class="header">
     <nav>
-        <div class="logo">
-            <a href="/index.html"><img src="/assets/logo1.png" alt="logo"></a>
+        <a href="index.html"><img src="./assets/logo1.png"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="aboutus.html">About</a></li>
+                <li><a href="products.html">Store</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+                <li><a href="Query.html">Contact Us</a></li>
+                <li><a href="sitemap.html">Sitemap</a></li>
+            </ul>
         </div>
-        <ul>
-            <li><a class="active" href="index.html">Home</a></li>
-            <li><a href="aboutus.html">About</a></li>
-            <li><a href="products.html">Store</a></li>
-            <li><a href="quiz.html">Quiz</a></li>
-            <li><a href="Query.html">Contact Us</a></li>
-            <li><a href="sitemap.html">Sitemap</a></li>
-        </ul>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
     </nav>
+</section>
+
+<!------Artists------>
+
+<section class="course">
+    <h1>Top Artists</h1>
+
+
+    <div class="row">
+        <div class="course-col">
+            <h3>Elvis Presley</h3>
+            <img src="./assets/artists/" alt="Elvis Presley">
+        </div>
+        <div class="course-col">
+            <h3>Elton John</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec dui nunc mattis enim ut. Auctor augue mauris augue neque gravida in fermentum et.
+            </p>
+        </div>
+        <div class="course-col">
+            <h3>Bob Dylan</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec dui nunc mattis enim ut. Auctor augue mauris augue neque gravida in fermentum et.
+            </p>
+        </div>
+    </div>
+</section>
+
+
+<!------ campus ------>
+
+<!-- <section class="campus">
+    <h1>Our Global Campus</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec dui nunc mattis enim ut. Auctor augue mauris augue neque gravida in fermentum et.
+    </p>
+
+    <div class="row">
+        <div class="campus-col">
+            <img src="images/london.png" alt="">
+            <div class="layer">
+                <h3>LONDON</h3>
+            </div>
+        </div>
+        <div class="campus-col">
+            <img src="images/newyork.png" alt="">
+            <div class="layer">
+                <h3>NEW YORK</h3>
+            </div>
+        </div>
+        <div class="campus-col">
+            <img src="images/washington.png" alt="">
+            <div class="layer">
+                <h3>WASHINGTON</h3>
+            </div>
+        </div>
+    </div>
+</section> -->
+
+<!------ Facilities ------>
+
+<!-- <section class="facilities">
+    <h1>Our facilities</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec dui nunc mattis enim ut. Auctor augue mauris augue neque gravida in fermentum et.
+    </p>
+
+    <div class="row">
+        <div class="facilities-col">
+            <img src="images/library.png">
+            <h3>World Class Library</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec dui nunc mattis enim ut. Auctor augue mauris augue neque gravida in fermentum et.
+            </p>
+        </div>
+        <div class="facilities-col">
+            <img src="images/basketball.png">
+            <h3>Large Play Ground</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec dui nunc mattis enim ut. Auctor augue mauris augue neque gravida in fermentum et.
+            </p>
+        </div>
+        <div class="facilities-col">
+            <img src="images/cafeteria.png">
+            <h3>Yummy and Healthy Food</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec dui nunc mattis enim ut. Auctor augue mauris augue neque gravida in fermentum et.
+            </p>
+        </div>
+    </div>
+</section> -->
+
+<!------- Testimonials ------>
+
+<!-- <section class="testimonials">
+    <h1>What Our Students Say</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec dui nunc mattis enim ut. Auctor augue mauris augue neque gravida in fermentum et.
+    </p>
+
+    <div class="row">
+        <div class="testimonial-col">
+            <img src="images/user1.jpg">
+            <div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec dui nunc mattis enim ut. Auctor augue mauris augue neque gravida in fermentum et.
+                </p>
+                <h3>Christine Berkley</h3>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+        </div>
+        <div class="testimonial-col">
+            <img src="images/user2.jpg">
+            <div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec dui nunc mattis enim ut. Auctor augue mauris augue neque gravida in fermentum et.
+                </p>
+                <h3>David Byer</h3>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+            </div>
+        </div>
+    </div>
+</section> -->
+
+<!-- Call To Action -->
+
+<!-- <section class="cta">
+    <h1>Enroll For Our Various Online Courses<br>
+        Anywhere From The World</h1>
+    <a href="" class="hero-btn">CONTACT US</a>
+</section> -->
+
+<!-- Footer -->
+
+<!-- <section class="footer">
+    <h4>About Us</h4>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>
+        Non blandit massa enim nec dui nunc mattis enim ut. Auctor augue mauris augue neque gravida in fermentum et.
+    </p>
+    <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitch"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+    </div>
+    <p>Made with <i class="fa fa-heart-o"></i> Easy Tutorials</p>
+</section> -->
+
+
+
+<!------JavaScript for Toggle Menu------>
+
+<!-- <script>
+
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+
+</script> 
+
+-->
+
 </body>
 </html>
