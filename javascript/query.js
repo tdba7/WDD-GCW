@@ -34,28 +34,42 @@ function query(){
         hide.style.display = "none";
     
     var Element = document.createElement("form");
-    Element.setAttribute("id","ViewDetails")
-    
-    var txt1 = document.createTextNode(`\nName :${document.getElementById("Fname").value}\n`);  
+    Element.setAttribute("id","ViewDetails");
+    Element.setAttribute("action","mailto:shehanthi2001@gmail.com")
+    Element.setAttribute("method","post");
+    Element.setAttribute("enctype","text/plain");
+
+    var ele = document.createElement("textarea");
+    ele.setAttribute("id","INFO")
+    ele.setAttribute("name","Info:");
+
+    var txt1 = document.createTextNode(`\nName :${document.getElementById("name").value}\n`);  
 	ele.appendChild(txt1);
 	var br = document.createElement("br");				
 	ele.appendChild(br);
 	Element.appendChild(ele);	
-	
-	var txt2 = document.createTextNode(`Email :${document.getElementById("Email").value}\n`);
+
+    var txt2 = document.createTextNode(`Surname:${document.getElementById("surname").value}\n`);
 	ele.appendChild(txt2);
 	var br = document.createElement("br");				
 	ele.appendChild(br);
 	Element.appendChild(ele);	
 	
-	var txt3 = document.createTextNode(`Subject :${document.getElementById("Query").value}\n`);
+    var txt3 = document.createTextNode(`Address :${document.getElementById("address").value}\n`);
 	ele.appendChild(txt3);
 	var br = document.createElement("br");				
 	ele.appendChild(br);
 	Element.appendChild(ele);	
-	
-	var txt4 = document.createTextNode(`Details :${document.getElementById("Details").value}\n`);
+
+	var txt4 = document.createTextNode(`Email :${document.getElementById("mail").value}\n`);
 	ele.appendChild(txt4);
+	var br = document.createElement("br");				
+	ele.appendChild(br);
+	Element.appendChild(ele);	
+	
+	
+	var txt5 = document.createTextNode(`Details :${document.getElementById("details").value}\n`);
+	ele.appendChild(txt5);
 	Element.appendChild(ele);
 	
 	var btn1 = document.createElement("BUTTON");   // Creates a Edit Button
@@ -78,9 +92,9 @@ function Edit(){
 	var hide2 = document.querySelector("#ViewDetails");
 	hide2.remove();	
 	
-	var show = document.querySelector("#formgrid");
+	var show = document.querySelector("#grid");
 	show.style.display = 'block';
-	
+}	
 
    
    /* if(frm.customerName.value == "")
