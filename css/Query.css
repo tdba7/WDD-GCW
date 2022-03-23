@@ -51,7 +51,7 @@ input[type=text],input[type=email], select, textarea{
 	border-radius:10px;	
 	margin:auto;
 	width :50%;	
-	height:580px;
+	height:550px;
 	padding:15px;
 }
 #position1{
@@ -59,11 +59,28 @@ input[type=text],input[type=email], select, textarea{
 }
 
 button{
+    position: relative;
     background-color: #614404;
     color: antiquewhite;
     padding:3px;
     border-radius: 4px;
     float:left;
     position: relative;
-    margin-top: 5px;
+    margin-top: 10px;
+}
+
+#View{
+    background-color: #daa520;
+	margin:auto;
+	padding:40px;
+	width:60%;
+	height:350px;
+	position:relative;
+	color:white;
+	border-radius :6px;
+	font-size:20px;
+}
+#summary{
+    height: 200px;
+    font-size: 15px;
 }
