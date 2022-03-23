@@ -1,6 +1,7 @@
 *{
-    box-sizing: :border-box;
+    box-sizing: border-box;
 }
+
 h1{
     text-align: center;
     font-family: monospace;
@@ -65,7 +66,4 @@ button{
     float:left;
     position: relative;
     margin-top: 5px;
-
-.top{
-    padding-top: 250px;
 }
