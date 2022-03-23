@@ -39,7 +39,7 @@ input[type=text],input[type=email], select, textarea{
 }
 
 .grid{
-	position:absolute;	
+	position:relative;	
 	top:200px;
 	background-color:#daa520;		
 	border-radius:10px;	
@@ -53,6 +53,7 @@ input[type=text],input[type=email], select, textarea{
     position: relative;
 }
 
+<<<<<<< HEAD
 button{
     background-color: #614404;
     color: antiquewhite;
@@ -61,4 +62,8 @@ button{
     float:left;
     position: relative;
     margin-top: 5px;
+=======
+.top{
+    padding-top: 250px;
+>>>>>>> 83507e851238bf22653a189edccf3e37b104d61d
 }
