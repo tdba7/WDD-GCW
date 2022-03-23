@@ -1,3 +1,7 @@
 a.ex2:hover, a.ex2:active {font-size: 135%;}
 
 a.ex1:hover, a.ex1:active {fill: white;}
+
+h1 {padding-bottom:70px ;
+    text-align: center;}
+
