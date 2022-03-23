@@ -1,0 +1,20 @@
+.aboutus{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.student-col{
+    flex-basis: 31%;
+    background: #fff3f3;
+    border-radius: 20px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+.student-col:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
