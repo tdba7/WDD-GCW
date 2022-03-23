@@ -27,40 +27,38 @@
             </nav>
         </header>
 
-        <div class="top">
-            <h1 class="heading">CONTACT US</h1>
+        <div>
+            <h1>CONTACT US</h1>
             <P class="desc">Email us with any questions or queries, we would be happy to answer your questions.</P>
         </div>
         <div class="grid">
             <form>
-                <label for="name">Name</label><br>
+                <label for="cname">Name</label><br>
                 <input type="text" name="customerName" id="name" placeholder="Enter your name"><br>
             
-                <label for="surname">SurName</label><br>
+                <label for="surname">Surname</label><br>
                 <input type="text" name="lastName" id="surname" placeholder="Enter your surname"><br>
             
                 <label for="address">Address</label><br>
                 <input type="text" name="customerAddress" id="address" placeholder="Enter your address"><br>
 
-                <label for="mail">E-mail address</label><br>
+                <label for="mail">E-mail</label><br>
                 <input type="email" name="mailAddress" id="mail" placeholder="Enter your E-mail address"><br>
 
                 <label for="details">Query Details</label><br>
                 <textarea name="query" id="details" cols="30" rows="5"></textarea><br>
 
-                <label for="theme">Select a theme</label><br>
+                <label for="theme" >Select a theme</label><br>
                 <input type="radio" name="choose" id="theme1" value="theme1">
-                <label for="theme1">theme1</label>
+                <label for="theme1">Buying products</label>
                 <input type="radio" name="choose" id="theme2" value="theme2">
-                <label for="theme2">theme2</label>
+                <label for="theme2">Requests</label>
                 <input type="radio" name="choose" id="theme3" value="theme3">
-                <label for="theme3">theme3</label><br>
-
-                
-                <button name="button1" value="show and clear input"onclick="query()">View Query</button>
+                <label for="theme3">Complains</label><br>
             
             </form>
-        </div>
+            <button type="button" onclick="query();">View Query</button>
+        </div> 
     </div id="position1">    
 
         <script type="text/javascript" src="./javascript/query.js"></script>
