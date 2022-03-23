@@ -23,25 +23,22 @@
                     <li><a href="Query.html">Contact Us</a></li>
                     <li><a href="sitemap.html">Sitemap</a></li>
                 </ul>
-<<<<<<< HEAD
             </nav>
         </header>
 
         <div>
-            <h1>CONTACT US</h1>
-=======
+           
             </div>
             <i class="fa fa-bars" onclick="showMenu()"></i>
         </nav>
     </section>
     
     <section class="query">
-        <div class="top">
-            <h1 class="pheading">CONTACT US</h1>
->>>>>>> 83507e851238bf22653a189edccf3e37b104d61d
+        <div>
+            <h1>CONTACT US</h1>
             <P class="desc">Email us with any questions or queries, we would be happy to answer your questions.</P>
         </div>
-        <div class="grid">
+        <div id="grid">
             <form>
                 <label for="cname">Name</label><br>
                 <input type="text" name="customerName" id="name" placeholder="Enter your name"><br>
@@ -55,32 +52,14 @@
                 <label for="mail">E-mail</label><br>
                 <input type="email" name="mailAddress" id="mail" placeholder="Enter your E-mail address"><br>
 
-                <label for="details">Query Details</label><br>
-                <textarea name="query" id="details" cols="30" rows="10"></textarea><br>
-
-                <label for="theme">Select a theme</label><br>
-                <input type="radio" name="choose" id="theme1" value="theme1">
-                <label for="theme1">theme1</label><br>
-                <input type="radio" name="choose" id="theme2" value="theme2">
-                <label for="theme2">theme2</label><br>
-                <input type="radio" name="choose" id="theme3" value="theme3">
-                <label for="theme3">theme3</label><br>
-
-                <p id="check"></p>
-                
-                <button name="button1" value="show and clear input"onclick="query(this.form)">View Query</button>
-                <button name="button2" value="check2" id="check2" onclick="myfunction()">Check</button>
-            </form>
-        </div>
-    </section>
-        
+                <label for="details">Query details</label>
                 <textarea name="query" id="details" cols="30" rows="5"></textarea><br>
 
                 <label for="theme" >Select a theme</label><br>
                 <input type="radio" name="choose" id="theme1" value="theme1">
-                <label for="theme1">Buying products</label>
+                <label for="theme1">Buying products</label><br>
                 <input type="radio" name="choose" id="theme2" value="theme2">
-                <label for="theme2">Requests</label>
+                <label for="theme2">Requests</label><br>
                 <input type="radio" name="choose" id="theme3" value="theme3">
                 <label for="theme3">Complains</label><br>
             
@@ -89,6 +68,11 @@
         </div> 
     </div id="position1">    
 
+            </form>
+        </div>
+    </section>
+        
+              
         <script type="text/javascript" src="./javascript/query.js"></script>
 </body>
 </html>
