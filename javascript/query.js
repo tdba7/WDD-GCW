@@ -22,16 +22,20 @@ function query(){
         alert("Email Required!");
     }
 
-    if (query.value.lenth == 0){
+    if (Aquery.value.lenth == 0){
         alert("Query details are required!")
     }
     else{
         hideform();
     }
-
-    function hidefunction(){
-        
-    }
+}
+    function hideform(){
+        let hide = document.querySelector("#grid")
+        hide.style.display = "none";
+    
+    var Element = document.createElement("form");
+    Element.setAttribute("id","ViewDetails")
+    
     var txt1 = document.createTextNode(`\nName :${document.getElementById("Fname").value}\n`);  
 	ele.appendChild(txt1);
 	var br = document.createElement("br");				
