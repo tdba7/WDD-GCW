@@ -2,6 +2,14 @@ a.ex2:hover, a.ex2:active {font-size: 135%;}
 
 a.ex1:hover, a.ex1:active {fill: white;}
 
-h1 {padding-bottom:70px ;}
+.smtitle{
+    padding-bottom:70px ;
+    padding-top: 100px;
+    text-align: center;
+}
 
 svg {align-items: center;}
+
+.sitemap {
+    
+}
