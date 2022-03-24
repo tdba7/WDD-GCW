@@ -5,8 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./css/main.css">
+    <link rel="stylesheet" type="text/css" href="./css/Quiz.css">
+    <script type="text/javascript" src="./javascript/quiz.js"></script>
     <title>Quiz</title>
 </head>
+
 <body>
     <section class="header">
         <nav>
@@ -25,6 +28,95 @@
             <i class="fa fa-bars" onclick="showMenu()"></i>
         </nav>
     </section>
-    
-</body>
+
+		<div class="quizQuestions" id="timer">
+					<div id="timerLabel">Time Left:  </div> <!--The quiz time is limited to one minute.When you start the quiz, you can see the time left-->
+					<div id="showTimer"></div>
+					<span style="margin-left:500px;"><a href="#q1" class="quizAnchors">Q 01-03</a></span>
+					<span style="margin-left:20px;"><a href="#q4" class="quizAnchors">Q 04-06</a></span>
+					<span style="margin-left:20px;"><a href="#q7" class="quizAnchors">Q 07-10</a></span>
+		</div>
+
+		
+		<form name="quiz" id="quiz"> <!--Multiple-choice quiz-->
+			<div id="quizRules">
+				<h5 id="quizHeading">Welcome to the QUIZ</h5>
+				<br>
+				<!--The rules of the quiz-->
+				<p class="quizDetails"><strong>~ You have one minute to answer all the questions ~</strong></p>
+				<p class="quizDetails"><strong>~ The time will start after you press the start button ~</strong></p>
+				<p class="quizDetails"><strong>~ For each incorrect answer one mark will be reduced ~</strong></p>
+				<p class="quizDetails"><strong>~ For each correct answer two marks will be awarded ~</strong></p>
+				<p class="quizDetails"><strong>~ The quiz should consist of 10 questions ~</strong></p>
+				<p class="quizDetails"><strong>~ After you finished the quiz, you can see your results ~</strong></p>
+				<div class="button">
+					<button id="startButton" type="button" value="start" onclick="showQuiz(this.form);"> Start </button>
+				</div>
+			</div>
+
+			<div class="quizQuestions">
+				<!--5 quiz questions included-->
+				<div id="questions">
+					<div class="ques" id="q1">
+						<p><strong>1. In their 1979 UK top 10 hit, Quantum Jump sang about which famous TV cowboy show?</strong></p>
+						<p class="answers"><input type="radio" name="question1" value="wrong">A. The Virginian</p>
+						<p class="answers"><input type="radio" name="question1" value="correct">B. Lone Ranger</p> 
+						<p class="answers"><input type="radio" name="question1" value="wrong">C. Bonanza</p>
+						<p class="answers"><input type="radio" name="question1" value="wrong">D. Gun Smoke</p>
+					</div>
+
+					<div class="ques">
+						<p><strong>2. Michael Jackson had hits in the 1970s, 1980s and 1990s. What was the name of his all-time best selling album?</strong></p>
+						<p class="answers"><input type="radio" name="question2" value="correct">A. Thriller</p>
+						<p class="answers"><input type="radio" name="question2" value="wrong">B. Bad</p>
+						<p class="answers"><input type="radio" name="question2" value="wrong">C. Off The Wall</p>
+						<p class="answers"><input type="radio" name="question2" value="wrong">D. Blood on the Dance</p>
+					</div>
+
+					<div class="ques">
+						<p><strong>3. Take That had a UK #1 in 1993 with "Relight My Fire". Who featured on the song with the band?</strong></p>
+						<p class="answers"><input type="radio" name="question3" value="wrong">A. Madonna</p>  
+						<p class="answers"><input type="radio" name="question3" value="wrong">B. Kylie Minogue</p>
+						<p class="answers"><input type="radio" name="question3" value="correct">C. Lulu</p>
+						<p class="answers"><input type="radio" name="question3" value="wrong">D. Diana Ross</p>
+					</div>
+
+					<div class="ques" id="q4">
+						<p><strong>4. What's Elvis Presley's biggest hit song?</strong></p>
+						<p class="answers"><input type="radio" name="question4" value="wrong">A. Burning Love</p>   
+						<p class="answers"><input type="radio" name="question4" value="wrong">B. Cant help falling in Love</p>
+						<p class="answers"><input type="radio" name="question4" value="wrong">C. Spanish eyes</p>
+						<p class="answers"><input type="radio" name="question4" value="correct">D. Heartbreak Hotel</p>  
+					</div>
+
+					<div class="ques" id="q5">
+						<p><strong>5. Who came up with the name "ABBA"?</strong></p>
+						<p class="answers"><input type="radio" name="question5" value="wrong">A. A contest winner</p>   
+						<p class="answers"><input type="radio" name="question5" value="wrong">B. Benny</p>
+						<p class="answers"><input type="radio" name="question5" value="wrong">C. The band's manager</p>
+						<p class="answers"><input type="radio" name="question5" value="correct">D. Agnetha</p>  
+					</div>  
+
+					<div>
+						<button id="submitButton" type="button" class="submit" onclick="checkAnswers(),colorChange(),printResult();"> Submit </button>
+					</div>
+				</div>
+			</div>	
+			<div id="finalResults"> <!--After the quiz, you can see your results summary-->
+				<h3 id="resultsHeading">RESULTS</h3>
+				<div id="results">
+				<div id="totalScore" class="resultsDetails" style="margin-top:20px;"></div>
+				<div id="correctAns" class="resultsDetails"></div>
+				<div id="incorrectAns" class="resultsDetails"></div>
+			    <div id="emptyAns" class="resultsDetails"></div>
+				<div id="remainingTime" class="resultsDetails" style="margin-bottom:20px;"></div>
+				</div> 
+				<div class="button">
+					<button id="retryButton" onclick="resetPage(),stopTimer();" type="button"> Retry </button>
+				</div>
+			</div>
+		</form>
+
+	Page Developer Andrew Fernando	
+	</body>
 </html>
