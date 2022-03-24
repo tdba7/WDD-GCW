@@ -141,12 +141,12 @@ p{
 }
 
 .artist-col{
-    flex-basis: 31%;
-    background: rgb(224, 127, 71);
+    flex-basis: 20%;
+    background: rgb(150, 104, 78);
     border-radius: 10px;
     margin-bottom: 1%;
     margin-right: 20px;
-    padding: 20px 12px;
+    padding: 15px 12px;
     box-sizing: border-box;
     transition: 0.5s;
     color: white;
