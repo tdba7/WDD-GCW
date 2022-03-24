@@ -4,7 +4,7 @@ body {
    }
 
 .small-container{
-	margin: 40px;
+	margin-left: 40px;
   width: 300px;
   height: 400px;
   background-color: #065a91;
@@ -19,3 +19,5 @@ body {
         line-height: normal;
         padding-left: 40px;
     }
+
+    img {margin-top: 0%;}
