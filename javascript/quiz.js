@@ -68,7 +68,7 @@ function printResult(){
     document.getElementById('emptyAns').innerHTML = "Questions which you missed : " + emptyQuestions;
     document.getElementById('remainingTime').innerHTML = "Time Remained : " + time + "seconds";
 }
-function colorChange(){
+/* function colorChange(){
     if(total>=15) {
         document.body.style.backgroundImage = "url('backgroundBLUE.jpg')";
     }else if(total<15 && total>=10){
@@ -80,7 +80,7 @@ function colorChange(){
     }else{
         document.body.style.backgroundImage = "url('backgroundYELLOW.jpg')";
     }
-}
+} */
 
 function timeout() {
     setTimer = setTimeout('timeUp()',60000);		
@@ -103,8 +103,8 @@ function resetPage(){
     correctQuestions = '';
     incorrectQuestions = '';
     emptyQuestions = '';
-    document.body.style.backgroundColor="#fff";
-    document.body.style.backgroundImage = "url('ourbg.jpg')";
+/*     document.body.style.backgroundColor="#fff";
+    document.body.style.backgroundImage = "url('ourbg.jpg')"; */
 }
 
 function stopTimer(){
