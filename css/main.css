@@ -152,6 +152,10 @@ p{
     color: white;
 }
 
+iframe {
+    margin-top: 7%;
+}
+
 h3{
     text-align: center;
     font-weight: 600;

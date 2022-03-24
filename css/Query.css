@@ -1,7 +1,3 @@
-/* *{
-    box-sizing: border-box;
-} */
-
 h1{
     text-align: center;
     font-family: monospace;
@@ -54,6 +50,7 @@ input[type=text],input[type=email], select, textarea{
 	height:550px;
 	padding:15px;
 }
+
 #position1{
     position: relative;
 }
@@ -83,4 +80,5 @@ button{
 #summary{
     height: 200px;
     font-size: 15px;
+    position: relative;
 }
