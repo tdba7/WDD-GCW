@@ -13,7 +13,6 @@
 #center001{
 	text-align:center;
 	color:rgb(0, 0, 0);
-	font-family:Helvetica;
 }
 
 li{
@@ -29,6 +28,20 @@ button{
 
 button:hover{
 	background-color: rgb(0, 250, 54);
+	border: 1pt rgba(255,255,255,0) solid;
+	cursor: pointer;
+}
+
+button.retry{
+	
+	background-color:rgb(255, 255, 255);
+	border-radius: 5px;
+	transition: background-color 0.4s, border 0.4s;
+	margin-top: 30px;
+}
+
+button.retry:hover{
+	background-color: rgb(255, 112, 112);
 	border: 1pt rgba(255,255,255,0) solid;
 	cursor: pointer;
 }
