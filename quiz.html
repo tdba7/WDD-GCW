@@ -30,135 +30,43 @@
         </nav>
     </section>
 
-		<div class="quizQuestions" id="timer">
-					<div id="timerLabel">Time Left:  </div> <!--The quiz time is limited to one minute.When you start the quiz, you can see the time left-->
-					<div id="showTimer"></div>
-					<span style="margin-left:500px;"><a href="#q1" class="quizAnchors">Q 01-03</a></span>
-					<span style="margin-left:20px;"><a href="#q4" class="quizAnchors">Q 04-06</a></span>
-					<span style="margin-left:20px;"><a href="#q7" class="quizAnchors">Q 07-10</a></span>
-		</div>
-
-		<form name="quiz" id="quiz"> <!--Multiple-choice quiz-->
-			<div id="quizRules">
-				<h5 id="quizHeading">Welcome to the QUIZ</h5>
-				<br>
-				<!--The rules of the quiz-->
-				<p class="quizDetails"><strong>~ You have one minute to answer all the questions ~</strong></p>
-				<p class="quizDetails"><strong>~ The time will start after you press the start button ~</strong></p>
-				<p class="quizDetails"><strong>~ For each incorrect answer one mark will be reduced ~</strong></p>
-				<p class="quizDetails"><strong>~ For each correct answer two marks will be awarded ~</strong></p>
-				<p class="quizDetails"><strong>~ The quiz should consist of 10 questions ~</strong></p>
-				<p class="quizDetails"><strong>~ After you finished the quiz, you can see your results ~</strong></p>
-				<div class="button">
-					<button id="startButton" type="button" value="start" onclick="showQuiz(this.form);"> Start </button>
+			<div id="frame001">
+				<div id="center001">
+				<h2>How is Your Knowledge on Oldies?</h2>
+					<div id = "quiz" class = "Quiz" align="center">
+							<p title="Timer" id="timer">Timer</p>
+							<hr/>
+							
+							<div id = "question" class = "question"></div>
+							<ul>
+							<li class = "answer" >
+									<input type = "radio" name = "answer" value ="1"/><span id = "a1"></span>
+							</li>
+							<li class = "answer" >
+									<input type = "radio" name = "answer" value ="2"/><span id = "a2"></span>
+							</li>
+							<li class = "answer" >
+									<input type = "radio" name = "answer" value ="3"/><span id = "a3"></span>
+							</li>
+							<li class = "answer" >
+									<input type = "radio" name = "answer" value ="4"/><span id = "a4"></span>
+							</li>
+							</ul>
+							<div><button id = "next" class = "next" onclick="nextQuestion();">Next One</button></div>
+						
+					</div>
+						
+						<div id = "result" class = "container result" style="display:none;"></div>
+						
+			
+							<script src="./javascript/quiz.js"></script>
+			
 				</div>
 			</div>
-
-			<div class="quizQuestions">
-				<!--5 quiz questions included-->
-				<div id="questions">
-					<div class="ques" id="q1">
-						<p><strong>1. In their 1979 UK top 10 hit, Quantum Jump sang about which famous TV cowboy show?</strong></p>
-						<p class="answers"><input type="radio" name="question1" value="wrong">A. The Virginian</p>
-						<p class="answers"><input type="radio" name="question1" value="correct">B. Lone Ranger</p> 
-						<p class="answers"><input type="radio" name="question1" value="wrong">C. Bonanza</p>
-						<p class="answers"><input type="radio" name="question1" value="wrong">D. Gun Smoke</p>
-					</div>
-
-					<div class="ques">
-						<p><strong>2. Michael Jackson had hits in the 1970s, 1980s and 1990s. What was the name of his all-time best selling album?</strong></p>
-						<p class="answers"><input type="radio" name="question2" value="correct">A. Thriller</p>
-						<p class="answers"><input type="radio" name="question2" value="wrong">B. Bad</p>
-						<p class="answers"><input type="radio" name="question2" value="wrong">C. Off The Wall</p>
-						<p class="answers"><input type="radio" name="question2" value="wrong">D. Blood on the Dance</p>
-					</div>
-
-					<div class="ques">
-						<p><strong>3. Take That had a UK #1 in 1993 with "Relight My Fire". Who featured on the song with the band?</strong></p>
-						<p class="answers"><input type="radio" name="question3" value="wrong">A. Madonna</p>  
-						<p class="answers"><input type="radio" name="question3" value="wrong">B. Kylie Minogue</p>
-						<p class="answers"><input type="radio" name="question3" value="correct">C. Lulu</p>
-						<p class="answers"><input type="radio" name="question3" value="wrong">D. Diana Ross</p>
-					</div>
-
-					<div class="ques" id="q4">
-						<p><strong>4. What's Elvis Presley's biggest hit song?</strong></p>
-						<p class="answers"><input type="radio" name="question4" value="wrong">A. Burning Love</p>   
-						<p class="answers"><input type="radio" name="question4" value="wrong">B. Cant help falling in Love</p>
-						<p class="answers"><input type="radio" name="question4" value="wrong">C. Spanish eyes</p>
-						<p class="answers"><input type="radio" name="question4" value="correct">D. Heartbreak Hotel</p>  
-					</div>
-
-					<div class="ques" id="q5">
-						<p><strong>5. Who came up with the name "ABBA"?</strong></p>
-						<p class="answers"><input type="radio" name="question5" value="wrong">A. A contest winner</p>   
-						<p class="answers"><input type="radio" name="question5" value="wrong">B. Benny</p>
-						<p class="answers"><input type="radio" name="question5" value="wrong">C. The band's manager</p>
-						<p class="answers"><input type="radio" name="question5" value="correct">D. Agnetha</p>  
-					</div>  
-
-					<div class="ques" id="q6">
-						<p><strong>6. Which of these singers had a #1 hit on the Hot 100 in 1980?</strong></p>
-						<p class="answers"><input type="radio" name="question6" value="correct">A. A Elton John</p>   
-						<p class="answers"><input type="radio" name="question6" value="wrong">B. Billy Joel</p>
-						<p class="answers"><input type="radio" name="question6" value="wrong">C. John Denver</p>
-						<p class="answers"><input type="radio" name="question6" value="wrong">D. Bon Jovi</p>  
-					</div>
-
-					<div class="ques" id="q7">
-						<p><strong>7. Which of these was an opening act for Madonna in the '80s?</strong></p>
-						<p class="answers"><input type="radio" name="question7" value="wrong">A. A DJ Jazzy Jeff and the Fresh Prince</p>   
-						<p class="answers"><input type="radio" name="question7" value="correct">B. Beastie Boys</p>
-						<p class="answers"><input type="radio" name="question7" value="wrong">C. LL Cool J</p>
-					</div>
-
-					<div class="ques" id="q8">
-						<p><strong>8. How old was Elvis Presley when he died?</strong></p>
-						<p class="answers"><input type="radio" name="question8" value="wrong">A. 1980</p>
-						<p class="answers"><input type="radio" name="question8" value="wrong">B. 1775</p>
-						<p class="answers"><input type="radio" name="question8" value="wrong">C. 1970</p>
-						<p class="answers"><input type="radio" name="question8" value="correct">D. 1977</p>
-					</div>
-
-					<div class="ques" id="q9">
-						<p><strong>9. "Kung Fu Fighting" is a disco song by which vocalist??</strong></p>
-						<p class="answers"><input type="radio" name="question9" value="wrong">A. Stevie Wonder</p>   
-						<p class="answers"><input type="radio" name="question9" value="wrong">B. Benny</p>
-						<p class="answers"><input type="radio" name="question9" value="correct">C. Carl Douglas</p>
-						<p class="answers"><input type="radio" name="question9" value="wrong">D. Clarence</p>  
-					</div>
-
-					<div class="ques" id="q10">
-						<p><strong>10. On July 1st 1979, the first Sony Walkman went on sale. How much did it cost at the time?</strong></p>
-						<p class="answers"><input type="radio" name="question10" value="wrong">A. $75</p>   
-						<p class="answers"><input type="radio" name="question10" value="wrong">B. $100</p>
-						<p class="answers"><input type="radio" name="question10" value="wrong">C. $125</p>
-						<p class="answers"><input type="radio" name="question10" value="correct">D. $150</p>  
-					</div>
-
-					<div>
-						<button id="submitButton" type="button" class="submit" onclick="checkAnswers(),colorChange(),printResult();"> Submit </button>
-					</div>
-				</div>
-			</div>	
-			<div id="finalResults"> <!--After the quiz, you can see your results summary-->
-				<h3 id="resultsHeading">RESULTS</h3>
-				<div id="results">
-				<div id="totalScore" class="resultsDetails" style="margin-top:20px;"></div>
-				<div id="correctAns" class="resultsDetails"></div>
-				<div id="incorrectAns" class="resultsDetails"></div>
-			    <div id="emptyAns" class="resultsDetails"></div>
-				<div id="remainingTime" class="resultsDetails" style="margin-bottom:20px;"></div>
-				</div> 
-				<div class="button">
-					<button id="retryButton" onclick="resetPage(),stopTimer();" type="button"> Retry </button>
-				</div>
-			</div>
-		</form>
-
-			<p>
-				This page was developed by Andrew Fernando
-			</p>
+				<br><br><br><br><br>
+				<p>
+					This page was developed by Andrew Fernando
+				</p>
 
     <section class="footer">
         <h4>Developed By</h4>
