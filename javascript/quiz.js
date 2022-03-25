@@ -80,7 +80,7 @@ function colorChange(){
     }else{
         document.body.style.backgroundImage = "url('../assets/bg.jpg')";
     }
-}
+} */
 
 function timeout() {
     setTimer = setTimeout('timeUp()',60000);		
