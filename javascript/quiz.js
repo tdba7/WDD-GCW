@@ -68,19 +68,19 @@ function printResult(){
     document.getElementById('emptyAns').innerHTML = "Questions which you missed : " + emptyQuestions;
     document.getElementById('remainingTime').innerHTML = "Time Remained : " + time + "seconds";
 }
-/* function colorChange(){
+function colorChange(){
     if(total>=10) {
-        document.body.style.backgroundImage = "url('backgroundBLUE.jpg')";
+        document.body.style.backgroundImage = "url('../assets/bg.jpg')";
+    }else if(total<20 && total>=10){
+        document.body.style.backgroundImage = "url('../assets/bg.jpg')";
     }else if(total<10 && total>=5){
-        document.body.style.backgroundImage = "url('backgroundGREEN.jpg')";
+        document.body.style.backgroundImage = "url('../assets/bg.jpg')";
     }else if(total<5 && total>=3){
-        document.body.style.backgroundImage = "url('backgroundORANGE.jpg')";
-    }else if(total<3 && total>=1){
-        document.body.style.backgroundImage = "url('backgroundRED.jpg')";
+        document.body.style.backgroundImage = "url('../assets/bg.jpg')";
     }else{
-        document.body.style.backgroundImage = "url('backgroundYELLOW.jpg')";
+        document.body.style.backgroundImage = "url('../assets/bg.jpg')";
     }
-} */
+}
 
 function timeout() {
     setTimer = setTimeout('timeUp()',60000);		
