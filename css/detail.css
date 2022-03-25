@@ -1,0 +1,34 @@
+h1{
+    text-align: center;
+    color: white;
+    padding-top: 20px;
+}
+
+.box {
+    width: 400px;
+    height: 600px;
+    border: 5px solid goldenrod;
+    margin: 0 auto 15px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.info {
+    background-color: aliceblue;
+    color: black;
+}
+
+p{
+    color: black;
+    font-size:25px;
+}
+
+.under{
+    text-decoration: underline;
+    font-size: 25px;
+}
+
+li{
+    font-size: 25px;
+}
+

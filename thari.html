@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
+    <link rel="stylesheet" type="text/css" href="./css/detail.css">
+    <title>Tharinda</title>
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="./assets/logo1.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a class="active" href="index.html">Home</a></li>
+                    <li><a href="aboutus.html">About</a></li>
+                    <li><a href="products.html">Store</a></li>
+                    <li><a href="albums.html">Albums</a></li>
+                    <li><a href="quiz.html">Quiz</a></li>
+                    <li><a href="Query.html">Contact Us</a></li>
+                    <li><a href="sitemap.html">Sitemap</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+    </section>
+
+    <h1>
+        Task Summary
+    </h1>
+
+    <div class="info box">
+        <p>Name: Tharinda Attanayake</p><br>
+        <p>Student Role: Student 4</p><br>
+        <p>Student Id: 20200132</p><br>
+        <p>UoW Id: w1867334</p><br>
+        <p class="under">Tasks</p><br>
+        <li>SVG diagram</li><br>
+        <li>Thumbnail Images</li><br>
+        <li>Main page</li><br>
+        <li>External CSS reused</li><br>
+        <li>Extra content page/ Anchors</li><br>
+        <li>Logo/ Page Editor</li><br>
+        <li>Additional Interactivity</li><br>
+    </div>
+
+    <section class="footer">
+        <h4>Developed By</h4>
+        <p>
+            Tharinda Attanayake, Andrew Fernando, Shehanthi Fernando, Chirath Bolagamayalage
+        </p>
+        <p>© 2022 GOLDEN OLDIES. All Rights Reserved</p>
+    </section>
+
+    <script>
+    
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    
+    </script> 
+</body>
+</html>
