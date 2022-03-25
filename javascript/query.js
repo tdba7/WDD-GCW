@@ -38,38 +38,38 @@ function query(){
     Element.setAttribute("method","post");
     Element.setAttribute("enctype","text/plain");
 
-    var ele = document.createElement("textarea");
-    ele.setAttribute("id","summary")
-    ele.setAttribute("name","summary:");
+    var sum = document.createElement("textarea");
+    sum.setAttribute("id","summary")
+    sum.setAttribute("name","summary:");
 
     var txt1 = document.createTextNode(`\nName :${document.getElementById("name").value}\n`);  
-	ele.appendChild(txt1);
+	sum.appendChild(txt1);
 	var br = document.createElement("br");				
-	ele.appendChild(br);
-	Element.appendChild(ele);	
+	sum.appendChild(br);
+	Element.appendChild(sum);	
 
     var txt2 = document.createTextNode(`Surname:${document.getElementById("surname").value}\n`);
-	ele.appendChild(txt2);
+	sum.appendChild(txt2);
 	var br = document.createElement("br");				
-	ele.appendChild(br);
-	Element.appendChild(ele);	
+	sum.appendChild(br);
+	Element.appendChild(sum);	
 	
     var txt3 = document.createTextNode(`Address :${document.getElementById("address").value}\n`);
-	ele.appendChild(txt3);
+	sum.appendChild(txt3);
 	var br = document.createElement("br");				
-	ele.appendChild(br);
-	Element.appendChild(ele);	
+	sum.appendChild(br);
+	Element.appendChild(sum);	
 
 	var txt4 = document.createTextNode(`Email :${document.getElementById("mail").value}\n`);
-	ele.appendChild(txt4);
+	sum.appendChild(txt4);
 	var br = document.createElement("br");				
-	ele.appendChild(br);
-	Element.appendChild(ele);	
+	sum.appendChild(br);
+	Element.appendChild(sum);	
 	
 	
 	var txt5 = document.createTextNode(`Details :${document.getElementById("details").value}\n`);
-	ele.appendChild(txt5);
-	Element.appendChild(ele);
+	sum.appendChild(txt5);
+	Element.appendChild(sum);
 	
 	var btn1 = document.createElement("BUTTON");   // Creates a Edit Button
 	btn1.setAttribute('class','Edit');
