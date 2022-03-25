@@ -31,7 +31,7 @@ var questions = [
 		"question" : "Who came up with the name 'ABBA'?",
 		"answer1" : "A. Lucy",
 		"answer2" : "B. Agnetha",
-		"answer3" : "B. Benny",
+		"answer3" : "C. Benny",
 		"answer4" : "D. The band's manager",
 		"correctAnswer" : "2"
 	},{
@@ -202,4 +202,8 @@ function timer()
      return;
   }
 document.getElementById("timer").innerHTML="You got " + time + " seconds left!"; 
+}
+
+function retry(){
+    location.reload();
 }
