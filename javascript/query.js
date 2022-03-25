@@ -9,7 +9,6 @@ function query(){
     if (Aname.value.length == 0){
         alert("Name Required!");
     }
-   
     if (Asurname.value.length == 0){
         alert("Surname Required!");
     }
