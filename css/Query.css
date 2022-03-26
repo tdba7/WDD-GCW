@@ -49,6 +49,7 @@ input[type=text],input[type=email], select, textarea{
 	width :50%;	
 	height:550px;
 	padding:15px;
+    margin-bottom: 5%;
 }
 
 #position1{
