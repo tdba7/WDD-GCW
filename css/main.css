@@ -2,6 +2,7 @@
 
 *{
     font-family: Arial, Helvetica, sans-serif;
+    max-width: 100%;
 }
 
 .header{
@@ -9,7 +10,7 @@
     width: 100%;
     background-position: center;
     background-size: cover;
-    position: sticky;
+    position: relative;
     background-color: #240018;
     margin-top: 0%;
 }
@@ -20,11 +21,8 @@ body {
     height: 100%;
     margin: 0%;
     box-sizing: border-box;
-    position: relative;
     min-height: 100vh;
     background-image: url(../assets/bg.jpg);
-    
-    min-height: 100vh;
     
     display: flex;
     flex-direction: column;
@@ -93,17 +91,17 @@ nav .fa{
 }
 
 .artist-more{
-    width: 80%;
-    margin: auto;
+    width: 100%;
     text-align: center;
-    padding-top: 100px;
+/*     padding: 5%; */
     color: white;
+    margin-bottom: 3%;
 }
 
 h1{
     font-size: 36px;
     font-weight: 600;
-    padding-bottom: 5%;
+    padding-top: 5%;
 }
 
 p{
@@ -117,19 +115,21 @@ p{
     margin-top: 1%;
     margin-bottom: 1%;
     display: flex;
-    justify-content: space-between;
+/*     padding: 5%; */
+    justify-content:space-around;
 }
 
 .artist-col{
+    display: flex;
+    flex-direction: column;
     flex-basis: 20%;
     background: rgb(150, 104, 78);
     border-radius: 10px;
-    margin-bottom: 1%;
-    margin-right: 20px;
+    margin: auto;
     padding: 15px 12px;
     box-sizing: border-box;
     transition: 0.5s;
-    color: white;
+    margin: 1%;
 }
 
 iframe {
@@ -146,14 +146,6 @@ h3{
     box-shadow: 0 0 20px 0px white;
 }
 
-/* @media(max-width: 700px){
-    .row{
-        flex-direction: column;
-    }
-    .artist-col {
-        padding: 5%;
-    }
-} */
 
 /*------ footer ------*/
 

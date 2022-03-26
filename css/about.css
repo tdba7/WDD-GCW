@@ -1,17 +1,17 @@
 .aboutus{
+    margin-bottom: 5%;
     width: 80%;
-    margin: auto;
     text-align: center;
-    padding-top: 100px;
+/*     padding-top: 100px */;
 }
 
 .student-col{
-    flex-basis: 31%;
+/*     flex-basis: 31%; */
     background: #fff3f3;
     border-radius: 20px;
-    margin-left: 60px;
+    margin-left: 5%;
     margin-bottom: 5%;
-    padding: 20px 12px;
+    padding: 8px 16px;
     box-sizing: border-box;
     transition: 0.5s;
 }
