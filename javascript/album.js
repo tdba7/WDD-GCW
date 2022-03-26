@@ -19,7 +19,7 @@ $(document).ready(function () {
 
         $(href).toggleClass('active');
         $('.tabcontent').css({
-            height: "30rem"
+            height: "50rem"
         });
 
     })
