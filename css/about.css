@@ -1,6 +1,6 @@
 .aboutus{
     margin-bottom: 5%;
-    width: 80%;
+    width: 100%;
     text-align: center;
 /*     padding-top: 100px */;
 }
@@ -9,8 +9,7 @@
 /*     flex-basis: 31%; */
     background: #fff3f3;
     border-radius: 20px;
-    margin-left: 5%;
-    margin-bottom: 5%;
+    margin: 5%;
     padding: 8px 16px;
     box-sizing: border-box;
     transition: 0.5s;

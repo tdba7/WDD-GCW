@@ -5,8 +5,6 @@ h1{
 }
 
 .box {
-    width: 400px;
-    height: 720px;
     border: 5px solid goldenrod;
     margin: 0 auto 15px;
     padding: 20px;
