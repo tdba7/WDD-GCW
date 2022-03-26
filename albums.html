@@ -13,7 +13,6 @@
         <nav>
             <a href="index.html"><img src="./assets/logo1.png"></a>
             <div class="nav-links" id="navLinks">
-                <i class="fa fa-times" onclick="hideMenu()"></i>
                 <ul>
                     <li><a class="active" href="index.html">Home</a></li>
                     <li><a href="aboutus.html">About</a></li>
@@ -24,7 +23,6 @@
                     <li><a href="sitemap.html">Sitemap</a></li>
                 </ul>
             </div>
-                <i class="fa fa-bars" onclick="showMenu()"></i>
         </nav>
     </section>
 
@@ -211,25 +209,6 @@
     </div>
 </div>
 
-
-
-
-    <script>
-
-        var navLinks = document.getElementById("navLinks");
-        function showMenu(){
-            navLinks.style.right = "0";
-        }
-        function hideMenu(){
-            navLinks.style.right = "-200px";
-        }
-    
-    </script>
-
-    <script src="/javascript/jquery3.6.0.js"></script>
-    <script src="/javascript/album.js"></script>
-
-</body>
 <section class="footer">
     <h4>Developed By</h4>
     <p>
@@ -237,4 +216,9 @@
     </p>
     <p>© 2022 GOLDEN OLDIES. All Rights Reserved</p>
 </section>
+
+    <script src="/javascript/jquery3.6.0.js"></script>
+    <script src="/javascript/album.js"></script>
+
+</body>
 </html>

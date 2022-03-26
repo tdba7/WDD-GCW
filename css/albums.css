@@ -27,6 +27,7 @@ html, body{
 }
 
 .wrapper .container .grid-col a img{
+    padding: 5%;
     width: 100%;
 }
 
@@ -45,14 +46,14 @@ html, body{
     margin: 1% 5%;
     display: none;
     height: 0;
-    max-height: 30rem;
+    max-height: 45rem;
     transition: height .7s ease-in;
 }
 
 .wrapper .container .tabcontent .blog-content{
     display: flex;
     flex-direction: row;
-    background: lightblue;
+    background: #ffa500;
     padding: 2rem;
 }
 
