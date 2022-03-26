@@ -22,12 +22,12 @@
 }
 
 .wrapper .container .grid-col a img{
-    padding: 5%;
+    margin: 5%;
     width: 60%;
 }
 
-img:hover{
-    box-shadow: 0 0 20px;
+.wrapper .container .grid-col img:hover{
+    box-shadow: 0px 0px 25px 7px;
     color: #ffa500;
 }
 
