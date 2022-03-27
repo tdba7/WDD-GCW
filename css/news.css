@@ -1,0 +1,36 @@
+h1{
+    text-align: left;
+    color: white;
+    text-decoration: underline;
+    font-size: 30px;
+    float: left;
+}
+h1 a{
+    color: rgb(255, 255, 255);
+}
+
+h1 a:hover{
+    color: black;
+}
+
+.box {
+    border: 5px solid white;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #ffa500;
+    margin-top: 50px;
+}
+
+.info p{
+    background-color:#ffa500;
+    color: black;
+    font-size: 20px;
+}
+
+.anchor a {
+    padding-left: 15px;
+    color: aliceblue;
+    margin-left: auto;
+    font-size: 30px;
+    
+}
