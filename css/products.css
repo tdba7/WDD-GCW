@@ -37,18 +37,18 @@ body {
 
 #main-product-card .table-row .product-card button:hover {
     opacity: 0.4;
-  }
-  
-  .center-table {
+}
+
+.center-table {
     margin-left: auto;
     margin-right: auto;
-  }
-  .table-row {
+}
+
+.table-row {
     display: inline;
     align-items: center;
-  }
-  .fieldset {
-      background-color: green;
-      
-  
+}
+
+.fieldset {
+    background-color: green;
 }
