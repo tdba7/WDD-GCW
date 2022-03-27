@@ -31,17 +31,32 @@ body {
 }
 
 #main-product-card .table-row .product-card button:hover {
+<<<<<<< HEAD
     background-color: gold;
     color: black;
+=======
+    opacity: 0.4;
+>>>>>>> 8aee3bd60062a010ad1907ae24a892a2f6f8f56d
 }
 
 .center-table {
     margin-left: auto;
     margin-right: auto;
 }
+<<<<<<< HEAD
 .table-row {
     display: inline;
     align-items: center;
+=======
+
+.table-row {
+    display: inline;
+    align-items: center;
+}
+
+.fieldset {
+    background-color: green;
+>>>>>>> 8aee3bd60062a010ad1907ae24a892a2f6f8f56d
 }
 .fieldset {
     background-color: gold;
