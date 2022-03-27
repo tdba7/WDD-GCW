@@ -89,3 +89,14 @@
 .active{
     display: block !important;
 }
+
+.container .tabcontent .blog-content img {
+    width: 800px;
+    height: 400px;
+}
+
+
+.container .tabcontent .blog-content p {
+    color: black;
+    font-size: 16px;
+}
