@@ -1,21 +1,16 @@
 body {
     margin: 0;
-    height: 2000px;
-    
 }
 
 #main-header {
-    padding: 5px;
+    padding: 15px;
     margin: 0px;
-    background-color: blue;
     text-align: center;
 }
 
 #main-product-card .table-row .product-card {
     max-width: 500px;
-    margin: auto;
     text-align: center;
-    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 #main-product-card .table-row .price {
@@ -26,9 +21,9 @@ body {
 #main-product-card .table-row .product-card button {
     border: none;
     outline: 0;
-    padding: 12px;
+    padding: 15px;
     color: white;
-    background-color: pink;
+    background-color: rgb(209, 158, 28);
     text-align: center;
     cursor: pointer;
     width: 100%;
@@ -36,19 +31,31 @@ body {
 }
 
 #main-product-card .table-row .product-card button:hover {
-    opacity: 0.4;
-  }
-  
-  .center-table {
+    background-color: gold;
+    color: black;
+}
+
+.center-table {
     margin-left: auto;
     margin-right: auto;
-  }
-  .table-row {
+}
+.table-row {
     display: inline;
     align-items: center;
-  }
-  .fieldset {
-      background-color: green;
-      
-  
+}
+.fieldset {
+    background-color: gold;
+    }
+
+.table-row img{
+    height: 350px;
+    width: 350px;
+}
+
+.table-row{
+    color: rgb(255, 255, 255);
+}
+
+#ordsm{
+    color: aliceblue;
 }
