@@ -1,22 +1,64 @@
 .aboutus{
-    margin-bottom: 5%;
     width: 100%;
     text-align: center;
 }
 
+.row {
+    margin: 5%;
+}
+
 .student-col{
+    flex-basis: 32%;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
     background: #fff3f3;
-    border-radius: 20px;
-    margin: 1%;
-    padding: 8px 16px;
+    border-radius: 10px;
+    margin: 30px 1px;
     box-sizing: border-box;
+    transition: 0.5s;
+    margin: 1%;
+}
+
+.student-col img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.student-col h4 {
+    text-align: center;
+}
+
+.layer{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
     transition: 0.5s;
 }
 
-.student-col:hover{
-    box-shadow: 0 0 20px 0px white;
+.layer:hover{
+    background: #ffa500;
+    opacity: 90%;
 }
 
-h1{
-    color: #ffa500;
+.layer h3{
+    width: 100%;
+    font-weight: 500;
+    color: black;
+    font-size: 20px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+    text-transform: uppercase;
+}
+
+.layer:hover h3{
+    bottom: 49%;
+    opacity: 1;
 }
