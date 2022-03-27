@@ -9,7 +9,6 @@ function query(){
     if (Aname.value.length == 0){
         alert("Name Required!");
     }
-   
     if (Asurname.value.length == 0){
         alert("Surname Required!");
     }
@@ -39,38 +38,38 @@ function query(){
     Element.setAttribute("method","post");
     Element.setAttribute("enctype","text/plain");
 
-    var ele = document.createElement("textarea");
-    ele.setAttribute("id","summary")
-    ele.setAttribute("name","summary:");
+    var sum = document.createElement("textarea");
+    sum.setAttribute("id","summary")
+    sum.setAttribute("name","summary:");
 
-    var txt1 = document.createTextNode(`\nName :${document.getElementById("name").value}\n`);  
-	ele.appendChild(txt1);
+    var sumName = document.createTextNode(`\nName :${document.getElementById("name").value}\n`);  
+	sum.appendChild(sumName);
 	var br = document.createElement("br");				
-	ele.appendChild(br);
-	Element.appendChild(ele);	
+	sum.appendChild(br);
+	Element.appendChild(sum);	
 
-    var txt2 = document.createTextNode(`Surname:${document.getElementById("surname").value}\n`);
-	ele.appendChild(txt2);
+    var sumSur = document.createTextNode(`Surname:${document.getElementById("surname").value}\n`);
+	sum.appendChild(sumSur);
 	var br = document.createElement("br");				
-	ele.appendChild(br);
-	Element.appendChild(ele);	
+	sum.appendChild(br);
+	Element.appendChild(sum);	
 	
-    var txt3 = document.createTextNode(`Address :${document.getElementById("address").value}\n`);
-	ele.appendChild(txt3);
+    var sumAdd = document.createTextNode(`Address :${document.getElementById("address").value}\n`);
+	sum.appendChild(sumAdd);
 	var br = document.createElement("br");				
-	ele.appendChild(br);
-	Element.appendChild(ele);	
+	sum.appendChild(br);
+	Element.appendChild(sum);	
 
-	var txt4 = document.createTextNode(`Email :${document.getElementById("mail").value}\n`);
-	ele.appendChild(txt4);
+	var sumMail = document.createTextNode(`Email :${document.getElementById("mail").value}\n`);
+	sum.appendChild(sumMail);
 	var br = document.createElement("br");				
-	ele.appendChild(br);
-	Element.appendChild(ele);	
+	sum.appendChild(br);
+	Element.appendChild(sum);	
 	
 	
-	var txt5 = document.createTextNode(`Details :${document.getElementById("details").value}\n`);
-	ele.appendChild(txt5);
-	Element.appendChild(ele);
+	var sumDetail = document.createTextNode(`Query Details :${document.getElementById("details").value}\n`);
+	sum.appendChild(sumDetail);
+	Element.appendChild(sum);
 	
 	var btn1 = document.createElement("BUTTON");   // Creates a Edit Button
 	btn1.setAttribute('class','Edit');

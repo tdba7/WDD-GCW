@@ -1,39 +1,58 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
 *{
-    margin: 0;
-    padding: 0;
     font-family: Arial, Helvetica, sans-serif;
+    max-width: 100%;
 }
+
 .header{
 
     width: 100%;
     background-position: center;
     background-size: cover;
-    position: static;
-    background-color: goldenrod
+    position: relative;
+    background-color: #240018;
+    margin-top: 0%;
+}
+
+
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0%;
+    box-sizing: border-box;
+    min-height: 100vh;
+    background-image: url(../assets/bg.jpg);
+    
+    display: flex;
+    flex-direction: column;
 }
 
 nav{
     display: flex;
-    padding: 2% 6%;
+    padding: 0% 3%;
     justify-content: space-between;
     align-items: center;
 }
+
 nav img{
     width: 150px;
 }
+
 .nav-links{
     flex: 1;
     text-align: right;
 }
+
 .nav-links ul li{
     list-style: none;
     display: inline-block;
     padding: 8px 20px;
     position: relative;
 }
+
 .nav-links ul li a{
-    color: black;
+    color: orange;
     text-decoration: none;
     font-size: 16px;
     font-weight: bold;
@@ -47,11 +66,12 @@ nav img{
     content: '';
     width: 0%;
     height: 2px;
-    background: #f44336;
+    background: orange;
     display: block;
     margin: auto;
     transition: 0.5s;
 }
+
 .nav-links ul li:hover::after{
     width: 100%;
 }
@@ -60,59 +80,38 @@ nav .fa{
     display: none;
 }
 
-@media(max-width: 700px){
-    .text-box h1{
-        font-size: 20px;
-    }
-    .nav-links ul li{
-        display: block;
-    }
-    .nav-links{
-        position: absolute;
-        background: #f44336;
-        height: 100vh;
-        width: 200px;
-        top: 0;
-        right: -200px;
-        text-align: left;
-        z-index: 2;
-        transition: 1s;
-    }
-    nav .fa{
-        display: block;
-        color: #fff;
-        margin: 10px;
-        font-size: 22px;
-        cursor: pointer
-    }
-    .nav-links ul{
-        padding: 30px;
-    }
-}
-
 /*------ artist ------*/
 
 .artist{
     width: 80%;
     margin: auto;
     text-align: center;
-    padding-top: 100px;
+    color: white;
+}
+
+.artist img {
+    display: flex;
+    width: 99%;
 }
 
 .artist-more{
-    width: 80%;
-    margin: auto;
+    width: 100%;
     text-align: center;
-    padding-top: 100px;
+    color: white;
+    margin-bottom: 3%;
+    margin-top: 10%;
 }
 
 h1{
     font-size: 36px;
     font-weight: 600;
+    padding-top: 1%;
+    color: #ffa500;
+    text-decoration: underline;
 }
 
 p{
-    color: #777;
+    color: white;
     font-size: 14px;
     font-weight: 300;
     line-height: 22px;
@@ -120,192 +119,52 @@ p{
 }
 .row{
     margin-top: 1%;
-    display: flex;
-    justify-content: space-between;
-}
-.artist-col{
-    flex-basis: 31%;
-    background: #fff3f3;
-    border-radius: 10px;
     margin-bottom: 1%;
-    padding: 20px 12px;
+    display: flex;
+    justify-content:space-around;
+}
+
+.artist-col{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 20%;
+    background: rgb(150, 104, 78);
+    border-radius: 10px;
+    margin: auto;
+    padding: 15px 12px;
     box-sizing: border-box;
     transition: 0.5s;
+    margin: 1%;
 }
+
+
+iframe {
+    margin-top: 7%;
+}
+
 h3{
     text-align: center;
     font-weight: 600;
     margin: 10px 0;
 }
+
 .artist-col:hover{
-    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
-}
-@media(max-width: 700px){
-    .row{
-        flex-direction: column;
-    }
+    box-shadow: 0 0 20px 0px white;
 }
 
-
-/*------ campus ------*/
-
-.campus{
-    width: 80%;
-    margin: auto;
-    text-align: center;
-    padding-top: 50px;
-}
-.campus-col{
-    flex-basis: 32%;
-    border-radius: 10px;
-    margin-bottom: 30px;
-    position: relative;
-    overflow: hidden;
-}
-.campus-col img{
-    width: 100%;
-    display: block;
-}
-.layer{
-    background: transparent;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transition: 0.5s;
-}
-.layer:hover{
-    background: rgba(226,0,0,0.7);
-}
-.layer h3{
-    width: 100%;
-    font-weight: 500;
-    color: #fff;
-    font-size: 26px;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    position: absolute;
-    opacity: 0;
-    transition: 0.5s;
-}
-.layer:hover h3{
-    bottom: 49%;
-    opacity: 1;
-}
-
-/*------ Facilities ------*/
-
-.facilities{
-    width: 80%;
-    margin: auto;
-    text-align: center;
-    padding-top: 100px;
-}
-.facilities-col{
-    flex-basis: 31%;
-    border-radius: 10px;
-    margin-bottom: 5%;
-    text-align: left;
-}
-.facilities-col img{
-    width: 100%;
-    border-width: 10px;
-}
-.facilities-col p{
-    padding: 0;
-}
-.facilities-col h3{
-    margin-top: 16px;
-    margin-bottom: 15px;
-    text-align: left;
-}
-
-/*------ testimonials ------*/
-
-.testimonials{
-    width: 80%;
-    margin: auto;
-    padding-top: 100px;
-    text-align: center;
-}
-.testimonial-col{
-    flex-basis: 44%;
-    border-radius: 10px;
-    margin-bottom: 5%;
-    text-align: left;
-    background: #fff3f3;
-    padding: 25px;
-    cursor: pointer;
-    display: flex;
-}
-.testimonial-col img{
-    height: 40px;
-    margin-left: 5px;
-    margin-right: 30px;
-    border-radius: 50%;
-}
-.testimonial-col p{
-    padding: 0;
-}
-.testimonial-col h3{
-    margin-top: 15px;
-    text-align: left;
-}
-.testimonial-col .fa{
-    color: #f44336;
-}
-@media(max-width: 700px){
-    .testimonial-col img{
-        margin-left: 0px;
-        margin-right: 15px;
-    }
-}
-
-/*------ call to action ------*/
-
-.cta{
-    margin: 100px auto;
-    width: 80%;
-    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/banner2.jpg);
-    background-position: center;
-    background-size: cover;
-    border-radius: 10px;
-    text-align: center;
-    padding: 100px 0;
-}
-.cta h1{
-    color: #fff;
-    margin-bottom: 40px;
-    padding: 0;
-}
-
-@media(max-width: 700px){
-    .cta h1{
-        font-size: 24px;
-    }
-}
 
 /*------ footer ------*/
 
 .footer{
-    width: 100%;
+    background: #240018;
+    color: white;
     text-align: center;
-    padding: 30px 0;
+    margin-top: auto;
 }
 
 .footer h4{
-    margin-bottom: 25px;
-    margin-top: 20px;
-    font-weight: 600;
-}
-.icons .fa{
-    color: #f44336;
-    margin: 0 13px;
-    cursor: pointer;
-    padding: 18px 0;
-}
-.fa-heart-o{
-    color: #f44336;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    color: white;
 }

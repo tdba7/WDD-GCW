@@ -1,0 +1,47 @@
+#frame001{
+	height:350px;
+	width:500px;
+	background-color:#daa520;
+	border:solid #808080;
+	margin: 5% ;
+	border-radius:10px;
+    margin-left: auto;
+	margin-right: auto;
+}
+
+
+#center001{
+	text-align:center;
+	color:rgb(0, 0, 0);
+}
+
+li{
+list-style:none;
+text-align:left;}
+
+button{
+	
+	background-color:rgb(255, 255, 255);
+	border-radius: 5px;
+	transition: background-color 0.4s, border 0.4s;
+}
+
+button:hover{
+	background-color: rgb(0, 250, 54);
+	border: 1pt rgba(255,255,255,0) solid;
+	cursor: pointer;
+}
+
+button.retry{
+	
+	background-color:rgb(255, 255, 255);
+	border-radius: 5px;
+	transition: background-color 0.4s, border 0.4s;
+	margin-top: 20px;
+}
+
+button.retry:hover{
+	background-color: rgb(255, 112, 112);
+	border: 1pt rgba(255,255,255,0) solid;
+	cursor: pointer;
+}

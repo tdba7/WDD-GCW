@@ -6,6 +6,10 @@ a.ex1:hover, a.ex1:active {fill: white;}
     padding-bottom:70px ;
     padding-top: 100px;
     text-align: center;
+    color: #ffa500;
+    text-transform: uppercase;
+    font-size: 40px;
+    text-decoration: underline;
 }
 
 svg {align-items: center;}
