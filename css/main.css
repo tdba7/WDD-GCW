@@ -168,3 +168,17 @@ h3{
     width: 100%;
     color: white;
 }
+
+.footer a{
+    color: aliceblue; 
+}
+.footer h6{
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+.name p{
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 20px;
+}
