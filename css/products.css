@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+    height: 2000px;
+    
+}
+
+#main-header {
+    padding: 5px;
+    margin: 0px;
+    background-color: blue;
+    text-align: center;
+}
+
+#main-product-card .table-row .product-card {
+    max-width: 500px;
+    margin: auto;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#main-product-card .table-row .price {
+    color: red;
+    font-size: 50px;
+}
+
+#main-product-card .table-row .product-card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: pink;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 25px;
+}
+
+#main-product-card .table-row .product-card button:hover {
+    opacity: 0.4;
+  }
+  
+  .center-table {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .table-row {
+    display: inline;
+    align-items: center;
+  }
+  .fieldset {
+      background-color: green;
+      
+  
+}

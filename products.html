@@ -5,7 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./css/main.css">
+    <link rel="stylesheet" type="text/css" href="./css/products.css">
     <title>Products</title>
+
+
+    <script>
+    
+    function validateForm() {
+        let x = document.forms["myForm"]["fname"].value;
+        if (x == "") {
+            alert("Name must be filled out");
+            
+        }
+        let y = document.forms["myForm"]["eMail"].value;
+        if (y == "") {
+            alert("E-mail must be filled out");
+            
+        }
+        let z = document.forms["myForm"]["cCard"].value;
+        if (z == "") {
+            alert("Card Number must be filled out");
+            
+        }
+    }
+    
+
+    </script>
+
 </head>
 <body>
     <section class="header">
@@ -25,6 +51,102 @@
             <i class="fa fa-bars" onclick="showMenu()"></i>
         </nav>
     </section>
+
+    <h1 id="main-header">Buy Products</h1>
+
+    <div id="main-product-card">
+        <table class= "center-table">
+            <tr class ="table-row">
+                <td>
+                    <div class="product-card">
+                        <img src="./assets/images for products/istockphoto-542290570-612x612.jpg" alt="welikalaaaaaa" style="width:100%">
+                        <h2>Product1</h2>
+                        <p>Description1</p>
+                        <label for = "p1"> Order quantity: </label>
+                        <input type = "text" name = "quantity1" id = "p1">
+                        <p><button onclick="productname1()">"Add to cart"</button></p>
+                    </div>
+                </td>
+            </tr>
+
+            <tr class ="table-row">
+                <td>
+                    <div class="product-card">
+                        <img src="./assets/images for products/photo-1558584609-3bc61fbad6e7.avif" alt"devmiiiiiii" style="width:100%">
+                        <h2>Product2</h2>
+                        <p>Description2</p>
+                        <label for = "p2"> Order quantity: </label>
+                        <input type = "text" name = "quantity2" id = "p2">
+                        <p><button onclick="productname2()">"Add to cart"</button></p>
+                    </div>
+                </td>
+            </tr>
+
+            <tr class ="table-row">
+                <td>
+                    <div class="product-card">
+                        <img src="./assets/images for products/prod_19666167212.jpg" alt"thihasnaaaaa" style="width:100%">
+                        <h2>Product3</h2>
+                        <p>Description3</p>
+                        <label for = "p3"> Order quantity: </label>
+                        <input type = "text" name = "quantity3" id = "p3">
+                        <p><button onclick="productname3()">"Add to cart"</button></p>
+                    </div>
+                </td>
+            </tr>
+
+            <tr class ="table-row">
+                <td>
+                    <div class="product-card">
+                        <img src="./assets/images for products/Vinyl-Record-1024x683.jpg" alt"weliiiii" style="width:100%">
+                        <h2>Product4</h2>
+                        <p>Description4</p>
+                        <label for = "p4"> Order quantity: </label>
+                        <input type = "text" name = "quantity4" id = "p1">
+                        <p><button onclick="productname4()">"Add to cart"</button></p>
+                    </div>
+                </td>
+            </tr>
+
+            <tr class ="table-row">
+                <td>
+                    <div class="product-card">
+                        <img src="./assets/images for products/Vintage-Rare-70s-Portable-Record-Player-603-Philips.jpg" alt"kaaalaaaa" style="width:100%">
+                        <h2>Product5</h2>
+                        <p>Description5</p>
+                        <label for = "p5"> Order quantity: </label>
+                        <input type = "text" name = "quantity5" id = "p5">
+                        <p><button onclick="productname5()">"Add to cart"</button></p>
+                    </div>
+                </td>
+            </tr>
+
+
+        </table>
+
+        <form name="myForm" onsubmit="return validateForm()">
+                <fieldset class="fieldset">
+                    <legend style="color: rgb(38, 70, 30)"><h2> <b> <i>Your details </i> </b></h2></legend>
+
+                         <label for="fname">Name:<br>
+                         <input type="text" name="fullname" id="fname" placeholder="Enter your full name" size="25">
+                         </label><br>
+						 <label for="eMail"> Email address:<br>
+                         <input type="email" name="Emailaddress" placeholder="Enter your email" id="eMail"><br>
+                         <label for="cCard" >Credit Card Number<br>
+                         <input type="text" name="CardNumber" placeholder="Enter your visa card Number" id="cCard" size="20">
+                         </label><br>
+                         <input type="submit" value="Submit">
+                         <button id=placeorder>Place Order</button>   
+                </fieldset>
+                  
+        </form>
+
+        <label for="order">Order Summary:
+            <textarea id="order" name="order" rows="6" cols="50" > </textarea></label>
+    </div>
+
+
     
 </body>
 </html>
