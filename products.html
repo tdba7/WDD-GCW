@@ -1,4 +1,4 @@
-<!DOCTYPE html>/*
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,32 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./css/main.css">
     <link rel="stylesheet" type="text/css" href="./css/products.css">
+    <script type="text/javascript" src="./javascript/products.js"></script>
     <title>Products</title>
-
-
-    <script>
-    
-    function validateForm() {
-        let x = document.forms["myForm"]["fname"].value;
-        if (x == "") {
-            alert("Name must be filled out");
-            
-        }
-        let y = document.forms["myForm"]["eMail"].value;
-        if (y == "") {
-            alert("E-mail must be filled out");
-            
-        }
-        let z = document.forms["myForm"]["cCard"].value;
-        if (z == "") {
-            alert("Card Number must be filled out");
-            
-        }
-    }
-    
-
-    </script>
-
 </head>
 <body>
     <section class="header">
@@ -52,109 +28,208 @@
         </nav>
     </section>
 
-    <h1 id="main-header">Buy Products</h1>
 
-    <div id="main-product-card">
-        <table class= "center-table">
-            <tr class ="table-row">
-                <td>
-                    <div class="product-card">
-                        <img src="./assets/products/istockphoto-542290570-612x612.jpg" alt="Vinyl Disks">
-                        <h2>Vinyls</h2>
-                        <p>A pack of vinyl records of some of the top hits of all time. Each pack contains 4 disks.</p>
-                        <label for = "p1"> Order quantity: </label>
-                        <input type = "text" name = "quantity1" id = "p1">
-                        <p><button onclick="productname1()">"Add to cart"</button></p>
-                    </div>
-                </td>
-            </tr>
-
-            <tr class ="table-row">
-                <td>
-                    <div class="product-card">
-                        <img src="./assets/products/photo-1611001716885-b3402558a62b.jpg" alt="Walkmans">
-                        <h2>Walkmans</h2>
-                        <p>Revolutionary Sony Walkman's (non-digital) available with cassettes to choose from.</p>
-                        <label for = "p2"> Order quantity: </label>
-                        <input type = "text" name = "quantity2" id = "p2">
-                        <p><button onclick="productname2()">"Add to cart"</button></p>
-                    </div>
-                </td>
-            </tr>
-
-            <tr class ="table-row">
-                <td>
-                    <div class="product-card">
-                        <img src="./assets/products/71pzDAMPWiS.jpg" alt="Record Players">
-                        <h2>Record Players</h2>
-                        <p>WOCKODER Portable Record Players Suitcases Built-in Speaker with wireless.</p>
-                        <label for = "p3"> Order quantity: </label>
-                        <input type = "text" name = "quantity3" id = "p3">
-                        <p><button onclick="productname3()">"Add to cart"</button></p>
-                    </div>
-                </td>
-            </tr>
-
-            <tr class ="table-row">
-                <td>
-                    <div class="product-card">
-                        <img src="./assets/products/33cd2527a5688b62262e7412c5fc29af.jpg" alt="Cassette Players">
-                        <h2>Cassette Players</h2>
-                        <p>Portable Cassette Players with built in speakers and the ability to record</p>
-                        <label for = "p4"> Order quantity: </label>
-                        <input type = "text" name = "quantity4" id = "p1">
-                        <p><button onclick="productname4()">"Add to cart"</button></p>
-                    </div>
-                </td>
-            </tr>
-
-            <tr class ="table-row">
-                <td>
-                    <div class="product-card">
-                        <img src="./assets/products/gram.jpg" alt="Gramophones">
-                        <h2>Gramophones</h2>
-                        <p>Retro Turntable All in One Vintage Phonograph Nostalgic Gramophones.</p>
-                        <label for = "p5"> Order quantity: </label>
-                        <input type = "text" name = "quantity5" id = "p5">
-                        <p><button onclick="productname5()">"Add to cart"</button></p>
-                    </div>
-                </td>
-            </tr>
-
-
-        </table>
-
-        <form name="myForm" onsubmit="validateForm()">
-                <fieldset class="fieldset">
-                    <h2>Your details</h2>
-
-                        <label for="fname">Name:<br>
-                        <input type="text" name="fullname" id="fname" placeholder="Enter your full name" size="25">
-                        </label><br>
-                        <label for="eMail"> Email address:<br>
-                        <input type="email" name="Emailaddress" placeholder="Enter your email" id="eMail"><br>
-                        <label for="cCard" >Credit Card Number<br>
-                        <input type="text" name="CardNumber" placeholder="Enter your visa card Number" id="cCard" size="20">
-                        </label><br>
-                        <input type="submit" value="Submit">
-                        <button id=placeorder>Place Order</button>   
-                </fieldset>
+    <div class="container">
+        <h1>Welcome to our Retro Store</h1>
+        <form name="buy" action="" method="POST">
+            <!--personal and payment details scetion-->
+            <div class="details">
+                <h1>Fill the order form below to complete your purchase</h1><br><br>
+                <fieldset>
+                    <legend>Your Personal Details</legend><br>
+                    <label for="fname">Full Name</label><br>
+                    <input type="text" name="fullname" id="fname" placeholder="Your full name..." class="text">
+                    <br><br>
+                    <label for="email">Email Address</label><br>
+                    <input type="email" name="email" id="email" placeholder="Enter your email" class="text">
+                    <br>
+                </fieldset><br><br>
+                <fieldset>
+                    <legend>Your Payment Information</legend><br>
+                    <label>Card Type</label> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    <input type="radio" id="crcard" name="radio" value="credit card">
+                    <label for="crcard">Credit Card</label>&nbsp; &nbsp;
+                    <img src="./assets/visa_master.png" style="width:50px;height:35px;">&nbsp; &nbsp;
+                    <input type="radio" id="ppal" name="radio" value="paypal">
+                    <label for="ppal">PayPal</label>&nbsp; &nbsp;
+                    <img src="./assets/paypal.jpg" style="width:50px;height:35px;">
+                    <br><br><br>
+                    <label for="expdate">Expiry Date</label> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    <label for="cvv">Security Pin</label><br>
+                    <input type="text" id="expdate" name="expiry date" class="text" style="width: 30%" placeholder="MM / YY">&nbsp; &nbsp; &nbsp;
+                    <input type="text" id="secpin" name="securitypin" class="text" style="width: 30%" placeholder="cvv">
+                    <br><br>
+                    <label for="cardno">Card No.</label><br>
+                    <input type="text" name="cardno" id="cardno" class="text" style="width:30%" placeholder="**** **** **** ****"> &nbsp; &nbsp; &nbsp;
+                    <br><br>
+                    <label for="promo">Promo-Code</label><br>
+                    <input type="text" name="promo code" id="promo-c" style="width: 30%" class="text">
+                    <br>
+                </fieldset><br>
+                <!--place order and clear order buttons-->
+                <div>
+                    <div class="totalSumWrapper">Total Amount USD <span id="totalAmount">0.00</span></div>
+                    <input type="submit" value="Place order" class="end-button floatRight" id="place" onclick= "confirmOrder();">
+                    <input type="reset" value="Clear order" class="end-button margingRight floatRight" id="clear" onclick="resetForm();">
+                </div>
+            </div>
         </form>
+        <!--purchase product section-->
+        <div id="products">
 
-        <label for="order"><p id="ordsm">Order Summary:</p>
-            <textarea id="order" name="order" rows="6" cols="50" > </textarea></label>
+            <!--JOKER-->
+            <div class="product" >
+                <img class="image" src="./assets/products/gram.jpg" alt="gramophone">
+                <div class="wording">
+                    <h4>Gramophone</h4>
+                    <h5>Lorem ipsum dolor sit amet.</h5>
+                    <div>
+                        <span class="price">
+                            Price: $10
+                        </span><br><br>
+<!--                         Quality &nbsp;
+                        <select id="quality">
+                            <option value="UHD" selected>1080p(UHD)</option>
+                            <option value="HD">720p(HD)</option>
+                            <option value="SD">320p(SD)</option>
+                        </select><br> -->
+                        Quantity &nbsp;
+                        <input type="number" class="quantityInput" min="1" value="1">
+                    </div>
+                </div>
+                <button onclick="addToCart(this, 7, 1, 'JOKER');" id="btn1">
+                    Add to Cart
+                </button>
+            </div>
+
+            <!--THOR-->
+            <div class="product">
+                <img class="image" src="./assets/products/portable_cassette.jpg" alt="cassette">
+                <div class="wording">
+                    <h4>Portable Cassette Player</h4>
+                    <h5>Lorem ipsum dolor sit amet.</h5>
+                    <div>
+                        <span class="price">
+                            Price: $5
+                        </span><br><br>
+<!--                         Quality &nbsp;
+                        <select id="quality">
+                            <option value="UHD" selected>1080p(UHD)</option>
+                            <option value="HD">720p(HD)</option>
+                            <option value="SD">320p(SD)</option>
+                        </select><br> -->
+                        Quantity &nbsp;
+                        <input type="number" class="quantityInput" min="1" value="1">
+                    </div>
+                </div>
+                <button onclick="addToCart(this, 5, 2, 'THOR');" id="btn2">
+                    Add to Cart
+                </button>
+            </div>
+
+            <!--MOANA-->
+            <div class="product">
+                <img class="image" src="./assets/products/portable_record_player.jpg" alt="Record_Player">
+                <div class="wording">
+                    <h4>Bluetooth Record Player</h4>
+                    <h5>Lorem ipsum dolor sit amet.</h5>
+                    <div>
+                        <span class="price">
+                            Price: $3
+                        </span><br><br>
+                        Quantity &nbsp;
+                        <input type="number" class="quantityInput" min="1" value="1">
+                    </div>
+                </div>
+                <button onclick="addToCart(this, 3, 3, 'MOANA');" id="btn3">
+                    Add to Cart
+                </button>
+            </div>
+
+            <!--NO TIME TO DIE-->
+            <div class="product">
+                <img class="image" src="./assets/products/record_player.jpg" alt="Wockoder_player">
+                <div class="wording">
+                    <h4>Portable Record Player</h4>
+                    <h5>Lorem ipsum dolor sit amet.</h5>
+                    <div>
+                        <span class="price">
+                            Price: $14
+                        </span><br><br>
+<!--                         Quality &nbsp;
+                        <select id="quality">
+                            <option value="UHD" selected>1080p(UHD)</option>
+                            <option value="HD">720p(HD)</option>
+                            <option value="SD">320p(SD)</option>
+                        </select><br> -->
+                        Quantity &nbsp;
+                        <input type="number" class="quantityInput" min="1" value="1">
+                    </div>
+                </div>
+                <button onclick="addToCart(this, 14, 4, 'NO TIME TO DIE');" id="btn4">
+                    Add to Cart
+                </button>
+            </div>
+            
+            <!--NOBODY-->
+            <div class="product">
+                <img class="image" src="./assets/products/radio.jpg" alt="Portable_Radio">
+                <div class="wording">
+                    <h4>Portable Radio with Cassette Player</h4>
+                    <h5>Lorem ipsum dolor sit amet.</h5>
+                    <div>
+                        <span class="price">
+                            Price: $10
+                        </span><br><br>
+<!--                         Quality &nbsp;
+                        <select id="quality">
+                            <option value="UHD" selected>1080p(UHD)</option>
+                            <option value="HD">720p(HD)</option>
+                            <option value="SD">360p(SD)</option>
+                        </select><br> -->
+                        Quantity &nbsp;
+                        <input type="number" class="quantityInput" min="1" value="1">
+                    </div>
+                </div>
+                <button onclick="addToCart(this, 10, 5, 'NOBODY');" id="btn5">
+                    Add to Cart
+                </button>
+            </div>
+
+            <!--GODZILLA VS KONG-->
+            <div class="product">
+                <img class="image" src="./assets/products/vinyl_album.jpg" alt="vinyl_album">
+                <div class="wording">
+                    <h4>Vinyl Record Disks</h4>
+                    <h5>Lorem ipsum dolor sit amet.</h5>
+                    <div>
+                        <span class="price">
+                            Price: $8
+                        </span><br>
+                        Quantity &nbsp;
+                        <input type="number" class="quantityInput" min="1" value="1">
+                    </div>
+                </div>
+                <button onclick="addToCart(this, 8, 6, 'NOBODY');" id="btn6">
+                    Add to Cart
+                </button>
+            </div>
+            <br>
+        </div>
+        <br>
     </div>
+    <br><br><br><br><br>
+    <!--back to the top-->
+    <a href="#top" style="float: right; color: white; margin-right: 20px; font-size: 18px;">Back To Top</a><br><br>
 
 
-    
+
+
     <section class="footer">
-        <h6> This page is made by<a href="chira.html"> Chirath Bolagamayalage </a></h6>
         <h4>Developed By</h4>
         <p>
             Tharinda Attanayake, Andrew Fernando, Shehanthi Fernando, Chirath Bolagamayalage
         </p>
         <p>© 2022 GOLDEN OLDIES. All Rights Reserved</p>
     </section>
-    
-</body>
 </html>

@@ -1,61 +1,136 @@
+
 body {
-    margin: 0;
+    height: auto;
 }
 
-#main-header {
-    padding: 15px;
-    margin: 0px;
+.sticky {
+    position: fixed;
+    top     : 0;
+    width   : 100%;
+}
+
+.container {
+    width     : 98.5%;
+    height    : 1100px;
+    padding   : 10px;
+    margin-top: 20px;
+}
+
+.details {
+    float           : right;
+    width           : 40%;
+    margin-right    : 30px;
+    margin-top      : 15px;
+    padding         : 20px;
+    height          : 900px;
+    background-color: #0000007d;
+    color           : aliceblue;
+    border-radius   : 0px;
+    opacity         : 0.85;
+}
+
+#products {
+    margin-left : -115px;
+    margin-top  : 15px;
+    margin-right: 0px;
+    height      : 650px;
+    width       : 60%;
+    float       : left;
+}
+
+.text {
+    width        : 95%;
+    height       : 35px;
+    padding-left : 15px;
+    border       : none;
+    border-radius: 0px;
+    margin-bottom: 20px;
+    margin-top   : 5px;
+    background   : aliceblue;
+}
+
+.product {
+    margin-bottom   : 20px;
+    margin-left     : 8px;
+    margin-right    : 8px;
+    float           : right;
+    background-color: white;
+    width           : 240px;
+}
+
+.image {
+    width : 240px;
+    height: 280px;
+}
+
+.image:hover {
+    transform : scale(1.08);
+    box-shadow: 0 0 20px rgb(14, 14, 78);
+}
+
+.wording {
+    padding   : 10px;
     text-align: center;
 }
 
-#main-product-card .table-row .product-card {
-    max-width: 500px;
-    text-align: center;
+h4 {
+    font-weight: bolder;
 }
 
-#main-product-card .table-row .price {
-    color: red;
-    font-size: 50px;
+h5 {
+    font-size: 14px;
 }
 
-#main-product-card .table-row .product-card button {
-    border: none;
-    outline: 0;
-    padding: 15px;
-    color: white;
-    background-color: rgb(209, 158, 28);
-    text-align: center;
-    cursor: pointer;
-    width: 100%;
-    font-size: 25px;
+h1 {
+    color      : #d4d4d4;
+    text-align : center;
+    font-size  : 24px;
+    font-weight: normal;
+    text-shadow: 2px 2px 8px #ffffff70;
 }
 
-#main-product-card .table-row .product-card button:hover {
-    background-color: gold;
-    color: black;
+.product button {
+    border          : none;
+    outline         : 0;
+    padding         : 6px;
+    color           : white;
+    background-color: #000;
+    text-align      : center;
+    cursor          : pointer;
+    width           : 100%;
+    margin-left     : 0px;
+    margin-bottom   : 0px;
+    border-radius   : 0px;
 }
 
-.center-table {
-    margin-left: auto;
-    margin-right: auto;
-}
-.table-row {
-    display: inline;
-    align-items: center;
-}
-.fieldset {
-    background-color: gold;
-    }
-
-.table-row img{
-    height: 350px;
-    width: 350px;
+.product button:hover {
+    opacity: 0.7;
 }
 
-.table-row{
-    color: rgb(255, 255, 255);
+.floatRight {
+    float: right;
 }
 
-#ordsm{
-    color: aliceblue;
+.end-button {
+    width           : 100px;
+    height          : 40px;
+    margin          : 3px;
+    border          : 1pt #000 solid;
+    color           : #fff;
+    background-color: #000;
+    border-radius   : 0px;
+}
+
+.end-button:hover {
+    opacity: 0.8;
+    cursor : pointer;
+}
+
+.totalSumWrapper{
+    margin-top: 5px;
+    float: left;
+}
+
+.quantityInput{
+    width: 50px;
 }
