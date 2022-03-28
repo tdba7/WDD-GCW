@@ -23,8 +23,8 @@ body {
     margin-top      : 15px;
     padding         : 20px;
     height          : 900px;
-    background-color: #0000007d;
-    color           : aliceblue;
+    background-color: #ffa508;
+    color           : black;
     border-radius   : 0px;
     opacity         : 0.85;
 }
@@ -46,7 +46,7 @@ body {
     border-radius: 0px;
     margin-bottom: 20px;
     margin-top   : 5px;
-    background   : aliceblue;
+    background   : white;
 }
 
 .product {
@@ -54,7 +54,7 @@ body {
     margin-left     : 8px;
     margin-right    : 8px;
     float           : right;
-    background-color: white;
+    background-color: #ffa508;
     width           : 240px;
 }
 
@@ -65,7 +65,7 @@ body {
 
 .image:hover {
     transform : scale(1.08);
-    box-shadow: 0 0 20px rgb(14, 14, 78);
+    box-shadow: 0 0 20px orange;
 }
 
 .wording {
@@ -82,7 +82,7 @@ h5 {
 }
 
 h1 {
-    color      : #d4d4d4;
+    color      : white;
     text-align : center;
     font-size  : 24px;
     font-weight: normal;
