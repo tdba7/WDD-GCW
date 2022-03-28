@@ -44,48 +44,50 @@ function query(){
 
     var sumName = document.createTextNode(`\nName :${document.getElementById("name").value}\n`);  
 	sum.appendChild(sumName);
-	var br = document.createElement("br");				
+	/*var br = document.createElement("br");				
 	sum.appendChild(br);
-	Element.appendChild(sum);	
+	Element.appendChild(sum);*/	
 
     var sumSur = document.createTextNode(`Surname:${document.getElementById("surname").value}\n`);
 	sum.appendChild(sumSur);
-	var br = document.createElement("br");				
+	/*var br = document.createElement("br");				
 	sum.appendChild(br);
-	Element.appendChild(sum);	
+	Element.appendChild(sum);*/
 	
     var sumAdd = document.createTextNode(`Address :${document.getElementById("address").value}\n`);
 	sum.appendChild(sumAdd);
-	var br = document.createElement("br");				
+	/*var br = document.createElement("br");				
 	sum.appendChild(br);
-	Element.appendChild(sum);	
+	Element.appendChild(sum);*/	
 
 	var sumMail = document.createTextNode(`Email :${document.getElementById("mail").value}\n`);
 	sum.appendChild(sumMail);
-	var br = document.createElement("br");				
+	/*var br = document.createElement("br");				
 	sum.appendChild(br);
-	Element.appendChild(sum);	
+	Element.appendChild(sum);*/	
 	
 	
 	var sumDetail = document.createTextNode(`Query Details :${document.getElementById("details").value}\n`);
 	sum.appendChild(sumDetail);
 	Element.appendChild(sum);
 	
-	var btn1 = document.createElement("BUTTON");   // Creates a Edit Button
-	btn1.setAttribute('class','Edit');
-	btn1.setAttribute('onclick','Edit();')
-	btn1.innerHTML = "Edit"; 
-	Element.appendChild(btn1);
-	
-	var btn2 = document.createElement("BUTTON");   // Creates a Send Button
-	btn2.setAttribute('id','send');		
-	btn2.setAttribute('type','submit');
-	btn2.innerHTML = "Send"; 
-	Element.appendChild(btn2);	
+    // Edit Button
+	var eButton = document.createElement("BUTTON");   
+	eButton.setAttribute('class','Edit');
+	eButton.setAttribute('onclick','Edit();')
+	eButton.innerHTML = "Edit"; 
+	Element.appendChild(eButton);
+
+	// Send Button
+	var sButton = document.createElement("BUTTON");   
+	sButton.setAttribute('id','send');		
+	sButton.setAttribute('type','submit');
+	sButton.innerHTML = "Send"; 
+	Element.appendChild(sButton);	
 	document.body.appendChild(Element);	
 	
 }
-//Edit Button
+
 function Edit(){
 	
 	var hide2 = document.querySelector("#View");

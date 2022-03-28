@@ -76,8 +76,7 @@ button{
 	position:relative;
 	color:white;
 	border-radius :6px;
-	font-size:20px;
-    z-index: -1;
+	font-size:20px;   
 }
 #summary{
     height: 200px;
