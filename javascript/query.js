@@ -48,29 +48,16 @@ function query(){
 
     var sumName = document.createTextNode(`\nName :${document.getElementById("name").value}\n`);  
 	sum.appendChild(sumName);
-	/*var br = document.createElement("br");				
-	sum.appendChild(br);
-	Element.appendChild(sum);*/	
 
     var sumSur = document.createTextNode(`Surname:${document.getElementById("surname").value}\n`);
 	sum.appendChild(sumSur);
-	/*var br = document.createElement("br");				
-	sum.appendChild(br);
-	Element.appendChild(sum);*/
 	
     var sumAdd = document.createTextNode(`Address :${document.getElementById("address").value}\n`);
 	sum.appendChild(sumAdd);
-	/*var br = document.createElement("br");				
-	sum.appendChild(br);
-	Element.appendChild(sum);*/	
 
 	var sumMail = document.createTextNode(`Email :${document.getElementById("mail").value}\n`);
 	sum.appendChild(sumMail);
-	/*var br = document.createElement("br");				
-	sum.appendChild(br);
-	Element.appendChild(sum);*/	
-	
-	
+    
 	var sumDetail = document.createTextNode(`Query Details :${document.getElementById("details").value}\n`);
 	sum.appendChild(sumDetail);
 	Element.appendChild(sum);
