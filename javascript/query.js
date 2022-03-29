@@ -4,7 +4,7 @@ function query(){
     var Asurname= document.getElementById("surname");
     var Aaddress = document.getElementById("address");
     var Aquery = document.getElementById("details");
-    var validateEmail=document.myform.mail.value;
+    var validateEmail=document.myForm.mail.value;
         var at=validateEmail.lastIndexOf("@");
         var dot=validateEmail.lastIndexOf(".");
 
