@@ -1,6 +1,6 @@
 function query(){
 
-    var aName = document.getElementById("name");
+    var aName = document.getElementById("cname");
     var aSurname= document.getElementById("surname");
     var aAddress = document.getElementById("address");
     var aQuery = document.getElementById("details");
