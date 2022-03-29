@@ -50,28 +50,21 @@
                 <label for="details">Query details</label>
                 <textarea name="query" id="details" cols="30" rows="5"></textarea><br>
 
-                <label for="theme" >Select a theme</label><br>
-                <input type="radio" name="choose" id="theme1" value="theme1">
-                <label for="theme1">Buying products</label><br>
-                <input type="radio" name="choose" id="theme2" value="theme2">
-                <label for="theme2">Requests</label><br>
-                <input type="radio" name="choose" id="theme3" value="theme3">
-                <label for="theme3">Complains</label><br>
-            
+                <label for="theme">Select Query Theme:</label>
+                <select id="theme" name="selectTheme" >
+                    <option value="">Select:</option>
+                    <option value="other">Requests</option>
+                    <option value="Product">Buying Products </option>
+                    <option value="Prices">Complaints</option>
+                </select>
+
             </form>
             <div>
                 <button type="button" onclick="query();">View Query</button>
             </div>
             
         </div> 
-    
-<!--         <div id="position1">    
-
-            <form>
-                
-            </form>
-
-        </div> -->
+        
     </section>
     
     <script type="text/javascript" src="./javascript/query.js"></script>

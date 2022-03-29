@@ -1,40 +1,44 @@
 function query(){
 
-    var Aname = document.getElementById("name");
-    var Asurname= document.getElementById("surname");
-    var Aaddress = document.getElementById("address");
-    var Aquery = document.getElementById("details");
+    var aName = document.getElementById("name");
+    var aSurname= document.getElementById("surname");
+    var aAddress = document.getElementById("address");
+    var aQuery = document.getElementById("details");
+    var aTheme = document.getElementById("theme");
     var validateEmail=document.myForm.mail.value;
         var at=validateEmail.lastIndexOf("@");
         var dot=validateEmail.lastIndexOf(".");
 
-    if (Aname.value.length == 0){
+    if (aName.value.length == 0){
         alert("Name Required!");
     }
 
-    if (Asurname.value.length == 0){
+    if (aSurname.value.length == 0){
         alert("Surname Required!");
     }
 
-    if (Aaddress.value.length == 0){
+    if (aAddress.value.length == 0){
         alert("Address Required!");
     }   
 
     if (at<1 || dot<at+2 || dot+2>=validateEmail.length){
-        alert("Please enter a Valid e-mail address");
+        alert("Please enter a Valid e-mail address!");
     }
 
-    if (Aquery.value.lenth == 0){
+    if (aQuery.value.lenth == 0){
         alert("Query details are required!")
     }
-
+    if (aTheme.value.length == ""){
+        alert("Query theme must be selected!")
+    }
     else{
-        hideform();
+        hideForm();
     }
 }
-    function hideform(){
-        let hide = document.querySelector("#grid")
-        hide.style.display = "none";
+
+function hideForm(){
+    let hide = document.querySelector("#grid")
+    hide.style.display = "none";
     
     var Element = document.createElement("form");
     Element.setAttribute("id","View");
@@ -44,7 +48,7 @@ function query(){
 
     var sum = document.createElement("textarea");
     sum.setAttribute("id","summary")
-    sum.setAttribute("name","summary:");
+    sum.setAttribute("name","Summary of the query:");
 
     var sumName = document.createTextNode(`\nName :${document.getElementById("name").value}\n`);  
 	sum.appendChild(sumName);
@@ -62,16 +66,17 @@ function query(){
 	sum.appendChild(sumDetail);
 	Element.appendChild(sum);
 	
+    var sumTheme = document.createTextNode(`Query Theme:${document.getElementById("theme").value}\n`);
+    sum.appendChild(sumTheme);
+
     // Edit Button
 	var eButton = document.createElement("BUTTON");   
-	eButton.setAttribute('class','Edit');
 	eButton.setAttribute('onclick','Edit();')
 	eButton.innerHTML = "Edit"; 
 	Element.appendChild(eButton);
 
 	// Send Button
-	var sButton = document.createElement("BUTTON");   
-	sButton.setAttribute('id','send');		
+	var sButton = document.createElement("BUTTON");  		
 	sButton.setAttribute('type','submit');
 	sButton.innerHTML = "Send"; 
 	Element.appendChild(sButton);	
@@ -79,10 +84,11 @@ function query(){
 	
 }
 
+//onclick Edit button 
 function Edit(){
 	
-	var hide2 = document.querySelector("#View");
-	hide2.remove();	
+	var hide = document.querySelector("#View");
+	hide.remove();	
 	
 	var show = document.querySelector("#grid");
 	show.style.display = 'block';
