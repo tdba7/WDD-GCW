@@ -50,7 +50,7 @@ function hideForm(){
     sum.setAttribute("id","summary")
     sum.setAttribute("name","Summary of the query:");
 
-    var sumName = document.createTextNode(`\nName :${document.getElementById("name").value}\n`);  
+    var sumName = document.createTextNode(`\nName :${document.getElementById("cname").value}\n`);  
 	sum.appendChild(sumName);
 
     var sumSur = document.createTextNode(`Surname:${document.getElementById("surname").value}\n`);
