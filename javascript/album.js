@@ -29,5 +29,11 @@ $(document).ready(function () {
 
 function myFunction(c) 
 {
-    document.getElementById("txt").style.color = c;
+    document.getElementById("y").style.color = c;
 }
+
+function myFunction(c) 
+{
+    document.getElementById("t").style.color = c;
+}
+

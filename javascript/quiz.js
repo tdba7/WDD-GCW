@@ -183,7 +183,6 @@ function timer()
     clearInterval(counter);
 	document.getElementById("timer").innerHTML = "Timer Expired";
 	document.getElementById("timer").innerHTML = "";
-	 
 
     quiz.style.display = 'none';
 	resultCont.style.display = '';
@@ -198,9 +197,7 @@ function timer()
 		{
 			document.getElementById("frame001").style.background="red";
 		}
-     
-     return;
-  }
+    	return;}
 document.getElementById("timer").innerHTML="You got " + time + " seconds left!"; 
 }
 
