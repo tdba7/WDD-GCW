@@ -28,7 +28,6 @@
     </section>
 
 
-
     <div class="wrapper">
         <h1>Albums</h1>
         <div class="container">
@@ -263,13 +262,19 @@
                         <div class="title">
                             <h2>The Mamas & The Papas: If You Can Believe Your Eyes and Ears</h2>
                             <p>Designed by Guy Webster</p>
-                            <p>
+                            <p id="txt">
                                 With all four band-members together in a bathtub, the cover said more about
                                 <strong>The Mamas & The Papas</strong> than what was probably intended.
                                 The toilet on the original cover of <strong><i>If You Can Believe Your Eyes and Ears</i></strong>
                                 also proved to be a no-no in 1966.
                             </p>
                             <a href="https://www.udiscovermusic.com/stories/the-100-greatest-album-covers/"><button type="button" class="btn-blog">Read More</button></a>
+                            <select id="dropdown" onchange="myFunction(this.options[this.selectedIndex].value);"> 
+                                <option value="black">black</option>
+                                <option value="red">red</option>
+                                <option value="green">green</option>
+                                <option value="#FF00F1">purple</option>
+                            </select>
                         </div>
                         <span>Close</span>
                     </div>
