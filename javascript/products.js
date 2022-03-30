@@ -1,8 +1,8 @@
-var cart = [];
+let cart = [];
 
 function addToCart(element, price, id, name) {
-    var qty = parseInt(element.previousElementSibling.querySelectorAll(".quantityInput")[0].value);
-    var index = cart.findIndex(function (elm) {
+    let qty = parseInt(element.previousElementSibling.querySelectorAll(".quantityInput")[0].value);
+    let index = cart.findIndex(function (elm) {
         return elm.id == id
     });
     if (index > -1) {
@@ -16,35 +16,35 @@ function addToCart(element, price, id, name) {
             qty: qty
         })
     }
-    var totalAmount = 0;
+    let totalAmount = 0;
     for (let index = 0; index < cart.length; index++) {
-        var element = cart[index];
+        let element = cart[index];
         totalAmount += (element.value * element.qty);
     }
     document.getElementById('totalAmount').innerText = totalAmount;
 }
 
 function confirmOrder() {
-    var name = document.getElementById('fname').value;
-    var email = document.getElementById('email').value;
-    var x=document.buy.email.value;
-    var atposition=x.indexOf("@");
-    var dotposition=x.lastIndexOf(".");
+    let name = document.getElementById('fname').value;
+    let email = document.getElementById('email').value;
+    let x=document.buy.email.value;
+    let atposition=x.indexOf("@");
+    let dotposition=x.lastIndexOf(".");
     if (atposition<1 || dotposition<atposition+2 || dotposition+2>=x.length){  
         alert("Please enter a valid e-mail address ");
     }
 
 
-    var orderText = ""
+    let orderText = ""
     for (let index = 0; index < cart.length; index++) {
-        orderText += "Movie Name : " + cart[index].name + "\n"
+        orderText += "Item Name : " + cart[index].name + "\n"
             
-            + "Movie Qty : " + cart[index].qty + "\n"
-            + "Movie Price : " + cart[index].value + "\n"
+            + "Item Qty : " + cart[index].qty + "\n"
+            + "Item Price : " + cart[index].value + "\n"
             + "Total Price : " + (cart[index].value * cart[index].qty) + "\n"
             + "-----------------------------------------\n";
     }
-    var text = "Your order details \n"
+    let text = "Your order details \n"
         + "Name : " + name + "\n"
         + "Email : " + email + "\n"
         + "-----------------------------------------\n"

@@ -31,7 +31,6 @@
     <div class="container">
         <h1>Welcome to our Retro Store</h1>
         <form name="buy" action="" method="POST">
-            <!--personal and payment details scetion-->
             <div class="details">
                 <h1>Fill the order form below to complete your purchase</h1><br><br>
                 <fieldset>
@@ -44,6 +43,7 @@
                     <br>
                 </fieldset><br><br>
                 <fieldset>
+                    <!--personal and payment details scetion-->
                     <legend>Your Payment Information</legend><br>
                     <label>Card Type</label> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
                     <input type="radio" id="crcard" name="radio" value="credit card">
@@ -81,22 +81,16 @@
                 <img class="image" src="./assets/products/gram.jpg" alt="gramophone">
                 <div class="wording">
                     <h4>Gramophone</h4>
-                    <h5>Lorem ipsum dolor sit amet.</h5>
+                    <h5>Retro and Brand New: High quality copper horn, premium furniture grade solid wood with high gloss finish. An elegant gem of home audio and decoration.</h5>
                     <div>
                         <span class="price">
                             Price: $10
                         </span><br><br>
-<!--                         Quality &nbsp;
-                        <select id="quality">
-                            <option value="UHD" selected>1080p(UHD)</option>
-                            <option value="HD">720p(HD)</option>
-                            <option value="SD">320p(SD)</option>
-                        </select><br> -->
                         Quantity &nbsp;
                         <input type="number" class="quantityInput" min="1" value="1">
                     </div>
                 </div>
-                <button onclick="addToCart(this, 7, 1, 'Gramophone');" id="btn1">
+                <button onclick="addToCart(this, 10, 1, 'Gramophone');" id="btn1">
                     Add to Cart
                 </button>
             </div>
@@ -106,17 +100,11 @@
                 <img class="image" src="./assets/products/portable_cassette.jpg" alt="cassette">
                 <div class="wording">
                     <h4>Portable Cassette Player</h4>
-                    <h5>Lorem ipsum dolor sit amet.</h5>
+                    <h5>Support built-in microphone recording. Compact and lightweight design cassette player allows you to play/record audio anywhere, enjoy your music anytime. It works perfectly as an old school, vintage Walkman.</h5>
                     <div>
                         <span class="price">
                             Price: $5
                         </span><br><br>
-<!--                         Quality &nbsp;
-                        <select id="quality">
-                            <option value="UHD" selected>1080p(UHD)</option>
-                            <option value="HD">720p(HD)</option>
-                            <option value="SD">320p(SD)</option>
-                        </select><br> -->
                         Quantity &nbsp;
                         <input type="number" class="quantityInput" min="1" value="1">
                     </div>
@@ -131,7 +119,7 @@
                 <img class="image" src="./assets/products/portable_record_player.jpg" alt="Record_Player">
                 <div class="wording">
                     <h4>Bluetooth Record Player</h4>
-                    <h5>Lorem ipsum dolor sit amet.</h5>
+                    <h5>Solid wood appearance makes this record player retro sense illustrate the extraordinary taste</h5>
                     <div>
                         <span class="price">
                             Price: $3
@@ -150,57 +138,45 @@
                 <img class="image" src="./assets/products/record_player.jpg" alt="Wockoder_Player">
                 <div class="wording">
                     <h4>Portable Record Player</h4>
-                    <h5>Lorem ipsum dolor sit amet.</h5>
+                    <h5>You can shut the case and keep the dust out or just snap closed the latch and pick it up like a mini suitcase and take it to someplace else</h5>
                     <div>
                         <span class="price">
                             Price: $14
                         </span><br><br>
-<!--                         Quality &nbsp;
-                        <select id="quality">
-                            <option value="UHD" selected>1080p(UHD)</option>
-                            <option value="HD">720p(HD)</option>
-                            <option value="SD">320p(SD)</option>
-                        </select><br> -->
                         Quantity &nbsp;
                         <input type="number" class="quantityInput" min="1" value="1">
                     </div>
                 </div>
-                <button onclick="addToCart(this, 14, 4, 'Wockoder_Player');" id="btn4">
+                <button onclick="addToCart(this, 14, 4, 'Wockoder Player');" id="btn4">
                     Add to Cart
                 </button>
             </div>
             
-            <!--NOBODY-->
+            <!--Portable_Radio-->
             <div class="product">
                 <img class="image" src="./assets/products/radio.jpg" alt="Portable_Radio">
                 <div class="wording">
                     <h4>Portable Radio with Cassette Player</h4>
-                    <h5>Lorem ipsum dolor sit amet.</h5>
+                    <h5>Compact and lightweight design cassette player allows you to play/record audio anywhere with Radio.</h5>
                     <div>
                         <span class="price">
                             Price: $10
                         </span><br><br>
-<!--                         Quality &nbsp;
-                        <select id="quality">
-                            <option value="UHD" selected>1080p(UHD)</option>
-                            <option value="HD">720p(HD)</option>
-                            <option value="SD">360p(SD)</option>
-                        </select><br> -->
                         Quantity &nbsp;
                         <input type="number" class="quantityInput" min="1" value="1">
                     </div>
                 </div>
-                <button onclick="addToCart(this, 10, 5, 'NOBODY');" id="btn5">
+                <button onclick="addToCart(this, 10, 5, 'Portable Radio');" id="btn5">
                     Add to Cart
                 </button>
             </div>
 
-            <!--GODZILLA VS KONG-->
+            
             <div class="product">
                 <img class="image" src="./assets/products/vinyl_album.jpg" alt="vinyl_album">
                 <div class="wording">
                     <h4>Vinyl Record Disks</h4>
-                    <h5>Lorem ipsum dolor sit amet.</h5>
+                    <h5> an analog sound storage medium in the form of a flat disc with an inscribed, modulated spiral groove.</h5>
                     <div>
                         <span class="price">
                             Price: $8
@@ -209,7 +185,7 @@
                         <input type="number" class="quantityInput" min="1" value="1">
                     </div>
                 </div>
-                <button onclick="addToCart(this, 8, 6, 'NOBODY');" id="btn6">
+                <button onclick="addToCart(this, 8, 6, 'vinyl album');" id="btn6">
                     Add to Cart
                 </button>
             </div>
@@ -225,7 +201,7 @@
     <script type="text/javascript" src="./javascript/products.js"></script>
 
 
-    <section class="footer">
+    <section class="footer" style="margin-top: 12%;">
         <h6> This page is made by<a href="chira.html"> Chirath Bolagamayalage </a></h6>
         <h4>Developed By</h4>
         <p>
