@@ -26,10 +26,10 @@ function query(){
     }
 
     if (aQuery.value.lenth == 0){
-        alert("Query details are required!")
+        alert("Query details are required!");
     }
     if (aTheme.value.length == ""){
-        alert("Query theme must be selected!")
+        alert("Query theme must be selected!");
     }
     else{
         hideForm();
@@ -37,17 +37,17 @@ function query(){
 }
 
 function hideForm(){
-    let hide = document.querySelector("#grid")
+    let hide = document.querySelector("#grid");
     hide.style.display = "none";
     
     var Element = document.createElement("form");
     Element.setAttribute("id","View");
-    Element.setAttribute("action","mailto:shehanthi2001@gmail.com")
+    Element.setAttribute("action","mailto:shehanthi2001@gmail.com");
     Element.setAttribute("method","post");
     Element.setAttribute("enctype","text/plain");
 
     var sum = document.createElement("textarea");
-    sum.setAttribute("id","summary")
+    sum.setAttribute("id","summary");
     sum.setAttribute("name","Summary of the query:");
 
     var sumName = document.createTextNode(`\nName :${document.getElementById("cname").value}\n`);  
@@ -71,7 +71,7 @@ function hideForm(){
 
     // Edit Button
 	var eButton = document.createElement("BUTTON");   
-	eButton.setAttribute('onclick','Edit();')
+	eButton.setAttribute('onclick','Edit();');
 	eButton.innerHTML = "Edit"; 
 	Element.appendChild(eButton);
 
