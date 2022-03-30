@@ -31,4 +31,3 @@ function myFunction(c)
 {
     document.getElementById("txt").style.color = c;
 }
-
