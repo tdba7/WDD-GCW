@@ -11,7 +11,7 @@
 <body>
     <section class="header">
         <nav>
-            <a href="index.html"><img src="./assets/logo1.png"></a>
+            <a href="index.html"><img src="./assets/logo1.png" alt="logo"></a>
             <div class="nav-links" id="navLinks">
                 <ul>
                     <li><a class="active" href="index.html">Home</a></li>
@@ -30,7 +30,8 @@
 
     <div class="container">
         <h1>Welcome to our Retro Store</h1>
-        <form name="buy" action="" method="POST">
+        <form name="buy" method="POST">
+            <!--personal and payment details scetion-->
             <div class="details">
                 <h1>Fill the order form below to complete your purchase</h1><br><br>
                 <fieldset>
@@ -48,21 +49,21 @@
                     <label>Card Type</label> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
                     <input type="radio" id="crcard" name="radio" value="credit card">
                     <label for="crcard">Credit Card</label>&nbsp; &nbsp;
-                    <img src="./assets/visa_master.png" style="width:50px;height:35px;">&nbsp; &nbsp;
+                    <img src="./assets/visa_master.png" alt="visa" style="width:50px;height:35px;">&nbsp; &nbsp;
                     <input type="radio" id="ppal" name="radio" value="paypal">
                     <label for="ppal">PayPal</label>&nbsp; &nbsp;
-                    <img src="./assets/paypal.jpg" style="width:50px;height:35px;">
+                    <img src="./assets/paypal.jpg" alt="paypal" style="width:50px;height:35px;">
                     <br><br><br>
                     <label for="expdate">Expiry Date</label> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                    <label for="cvv">Security Pin</label><br>
+                    <label for="secpin">Security Pin</label><br>
                     <input type="text" id="expdate" name="expiry date" class="text" style="width: 30%" placeholder="MM / YY">&nbsp; &nbsp; &nbsp;
                     <input type="text" id="secpin" name="securitypin" class="text" style="width: 30%" placeholder="cvv">
                     <br><br>
                     <label for="cardno">Card No.</label><br>
                     <input type="text" name="cardno" id="cardno" class="text" style="width:30%" placeholder="**** **** **** ****"> &nbsp; &nbsp; &nbsp;
                     <br><br>
-                    <label for="promo">Promo-Code</label><br>
-                    <input type="text" name="promo code" id="promo-c" style="width: 30%" class="text">
+                    <label for="promo-c">Promo-Code</label><br>
+                    <input type="text" name="promocode" id="promo-c" style="width: 30%" class="text">
                     <br>
                 </fieldset><br>
                 <!--place order and clear order buttons-->
@@ -197,8 +198,8 @@
 
     <!--back to the top-->
     <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
-    <script type="text/javascript" src="./javascript/main.js"></script>
-    <script type="text/javascript" src="./javascript/products.js"></script>
+    <script src="./javascript/main.js"></script>
+    <script src="./javascript/products.js"></script>
 
 
     <section class="footer" style="margin-top: 12%;">
