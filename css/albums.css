@@ -100,3 +100,43 @@
     color: black;
     font-size: 16px;
 }
+
+.colormenu {
+    display: flex;
+    padding: 1%;
+    color: #ffa500;
+    justify-content: center;
+    background-color: black;
+}
+
+label {
+    padding: 1%;
+}
+
+button {
+    background-color: #ffa500;
+    padding: 5px;
+    font-weight: bold;
+}
+
+.changebtn {
+    background-color: #9a9a9a;
+}
+
+select {
+    color: black;
+    text-align: center;
+    background-color: #ffa500;
+}
+
+.red {
+    background-color: red;
+}
+
+.green {
+    background-color: green;
+}
+
+.blue {
+    background-color: blue;
+}

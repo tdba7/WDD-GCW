@@ -45,331 +45,262 @@
                 <li><a href="#img-12"><img src="./assets/albulm_covers/album9.jpg" alt="TheMamasandthePapas"></a></li>
             </ul>
 
+            <div class="colormenu">
+                <label for="selectidbg">Select a Background Color : </label>
+                <select id="selectidbg">
+                    <option value="" selected disabled hidden> -- Select Color --</option>
+                    <option class="red">Red</option>
+                    <option class="green">Green</option>
+                    <option class="blue">Blue</option>
+                </select>
+                <button class="changebtn" onclick="colorbg()">Change Background</button>
+                <button onclick="defaultbg()">Default Background</button>
+            </div>
+
+            <div class="colormenu">
+                <label for="selectidfont">Select a Font Color : </label>
+                <select id="selectidfont">
+                    <option value="" selected disabled hidden> -- Select Color --</option>
+                    <option class="red">Red</option>
+                    <option class="green">Green</option>
+                    <option class="blue">Blue</option>
+                </select>
+                <button class="changebtn" onclick="colorfont()">Change Font Color</button>
+                <button onclick="defaultfont()">Default Font Color</button>
+            </div>
+
 
             <div class="data-content">
 
                 <div id="img-1" class="tabcontent">
-                    <div class="blog-content">
+                    <div class="blog-content" id="bgc1">
                         <div class="img">
                             <img src="/assets/albulm_covers/album20.jpg" alt="oasis">
                         </div>
-                        <div class="title">
+                        <div class="title" id="text1">
                             <h2>Oasis: Definitely Maybe</h2>
-                            <p>Brian Cannon</p>
-                            <p id="t">
-                                Their debut album pictures Oasis in the world's coolest crash pad, showing every band of the era how it ought to be living.
-                            </p>
+                                <p id="p1">Brian Cannon</p>
+                                <p id="pp1">
+                                    Their debut album pictures Oasis in the world's coolest crash pad, showing every band of the era how it ought to be living.
+                                </p>
                             <a href="https://www.udiscovermusic.com/stories/the-100-greatest-album-covers/"><button type="button" class="btn-blog">Read More</button></a>
-                            <br><br>
-                                <label for="Fontcolor">Choose font color</label>
-                                <select id="dropdown" onchange="myFunction(this.options[this.selectedIndex].value);"> 
-                                    <option value="black">black</option>
-                                    <option value="red">red</option>
-                                    <option value="green">green</option>
-                                    <option value="#FF00F1">purple</option>
-                                </select>
                         </div>
                         <span>Close</span>
                     </div>
                 </div>
 
                 <div id="img-2" class="tabcontent">
-                    <div class="blog-content">
+                    <div class="blog-content" id="bgc2">
                         <div class="img">
                             <img src="/assets/albulm_covers/album8.jpg" alt="PinkFloyd">
                         </div>
-                        <div class="title">
+                        <div class="title" id="text2">
                             <h2>Pink Floyd: Ummagumma</h2>
-                            <p>Designed by Hipgnosis</p>
-                            <p id="y">
+                            <p id="p2">Designed by Hipgnosis</p>
+                            <p id="pp2">
                                 Most of <strong><i>Pink Floyd'</i></strong>s covers would be in the running for a list of the 
                                 greatest album covers, but we wanted to highlight something that wasn't <i>Dark Side of the Moon.</i> 
                                 This burst of Storm Thorgerson / Hipgnosis imagination features four versions of the same photo (except that the band rotates one position in each), 
                                 matching their sense of surrealism.
                             </p>
                             <a href="https://www.udiscovermusic.com/stories/the-100-greatest-album-covers/"><button type="button" class="btn-blog">Read More</button></a>
-                            <br><br>
-                                <label for="Fontcolor">Choose font color</label>
-                                <select id="dropdown" onchange="myFunction(this.options[this.selectedIndex].value);"> 
-                                    <option value="black">black</option>
-                                    <option value="red">red</option>
-                                    <option value="green">green</option>
-                                    <option value="#FF00F1">purple</option>
-                                </select>
                         </div>
                         <span>Close</span>
                     </div>
                 </div>
 
                 <div id="img-3" class="tabcontent">
-                    <div class="blog-content">
+                    <div class="blog-content" id="bgc3">
                         <div class="img">
                             <img src="/assets/albulm_covers/album6.jpg" alt="TheBeatles">
                         </div>
-                        <div class="title">
+                        <div class="title" id="text3">
                             <h2>The Beatles: Yesterday and Toady</h2>
-                            <p>Designed by Robert Whitaker.</p>
-                            <p id="t">Okay, so it was a little graphic and provocative, but as the single most controversial thing The Beatles ever did (and the most expensive for an original),
+                            <p id="p3">Designed by Robert Whitaker.</p>
+                            <p id="pp3">Okay, so it was a little graphic and provocative, but as the single most controversial thing The Beatles ever did (and the most expensive for an original),
                                 the cover of <strong><i>Yesterday and Today</i></strong>
                             </p>
                             <a href="https://www.udiscovermusic.com/stories/the-100-greatest-album-covers/"><button type="button" class="btn-blog">Read More</button></a>
-                            <br><br>
-                                <label for="Fontcolor">Choose font color</label>
-                                <select id="dropdown" onchange="myFunction(this.options[this.selectedIndex].value);"> 
-                                    <option value="black">black</option>
-                                    <option value="red">red</option>
-                                    <option value="green">green</option>
-                                    <option value="#FF00F1">purple</option>
-                                </select>
                         </div>
                         <span>Close</span>
                     </div>
                 </div>
 
                 <div id="img-4" class="tabcontent">
-                    <div class="blog-content">
+                    <div class="blog-content" id="bgc4">
                         <div class="img">
                             <img src="/assets/albulm_covers/album17.jpg" alt="elvis">
                         </div>
-                        <div class="title">
+                        <div class="title" id="text4">
                             <h2>Elvis Presley: Elvis Presley</h2>
-                            <p>Designed by Robertson & Fresch</p>
-                            <p id="y">
+                            <p id="p4">Designed by Robertson & Fresch</p>
+                            <p id="pp4">
                                 RCA wasted no time in cleaning up Elvis, who'd look completely respectable on all future albums. 
                                 Meanwhile, his debut allowed him to look like the crazed hillbilly everyone's parents feared he was, 
                                 captured in mid-song at the Fort Homer Hesterly Armory in Tampa, Florida.
                             </p>
                             <a href="https://www.udiscovermusic.com/stories/the-100-greatest-album-covers/"><button type="button" class="btn-blog">Read More</button></a>
-                            <br><br>
-                                <label for="Fontcolor">Choose font color</label>
-                                <select id="dropdown" onchange="myFunction(this.options[this.selectedIndex].value);"> 
-                                    <option value="black">black</option>
-                                    <option value="red">red</option>
-                                    <option value="green">green</option>
-                                    <option value="#FF00F1">purple</option>
-                                </select>
                         </div>
                         <span>Close</span>
                     </div>
                 </div>
 
                 <div id="img-5" class="tabcontent">
-                    <div class="blog-content">
+                    <div class="blog-content" id="bgc5">
                         <div class="img">
                             <img src="/assets/albulm_covers/album16.jpg" alt="RollingStones">
                         </div>
-                        <div class="title">
+                        <div class="title" id="text5">
                             <h2>The Rolling Stones: Let It Bleed</h2>
-                            <p>Designed by Robert Brownjohn</p>
-                            <p id="y">
+                            <p id="p5">Designed by Robert Brownjohn</p>
+                            <p id="pp5">
                                 The Rolling Stones always had cool, attention-grabbing album covers. But while <i>Sticky Fingers</i> has a great story, 
                                 <strong><i>Let it Bleed</i></strong> was equally unique and surreal. Taking its inspiration from the album's original title 
                                 <i>Automatic Changer,</i> the front has the album on a turntable stacked with all sorts of other things. 
                                 We assume the mess on the backside happened after someone pressed "start."
                             </p>
                             <a href="https://www.udiscovermusic.com/stories/the-100-greatest-album-covers/"><button type="button" class="btn-blog">Read More</button></a>
-                            <br><br>
-                                <label for="Fontcolor">Choose font color</label>
-                                <select id="dropdown" onchange="myFunction(this.options[this.selectedIndex].value);"> 
-                                    <option value="black">black</option>
-                                    <option value="red">red</option>
-                                    <option value="green">green</option>
-                                    <option value="#FF00F1">purple</option>
-                                </select>
                         </div>
                         <span>Close</span>
                     </div>
                 </div>
 
                 <div id="img-6" class="tabcontent">
-                    <div class="blog-content">
+                    <div class="blog-content" id="bgc6">
                         <div class="img">
                             <img src="/assets/albulm_covers/album15.jpg" alt="FrankSinatra">
                         </div>
-                        <div class="title">
+                        <div class="title" id="text6">
                             <h2>Frank Sinatra: Come Fly With Me</h2>
-                            <p>Designed by Jon Jonson</p>
-                            <p id="y">
+                            <p id="p6">Designed by Jon Jonson</p>
+                            <p id="pp6">
                                 Each one of Sinatra's Capitol-era album covers was cool and classic in its own way, from the lonely scenes on the balled albums to the visual swagger on the swingers. 
                                 The cover of <strong><i>Come Fly With Me</i></strong> caught both Sinatra's natural charisma and the allure of the jet-set era.
                             </p>
                             <a href="https://www.udiscovermusic.com/stories/the-100-greatest-album-covers/"><button type="button" class="btn-blog">Read More</button></a>
-                            <br><br>
-                                <label for="Fontcolor">Choose font color</label>
-                                <select id="dropdown" onchange="myFunction(this.options[this.selectedIndex].value);"> 
-                                    <option value="black">black</option>
-                                    <option value="red">red</option>
-                                    <option value="green">green</option>
-                                    <option value="#FF00F1">purple</option>
-                                </select>
                         </div>
                         <span>Close</span>
                     </div>
                 </div>
 
                 <div id="img-7" class="tabcontent">
-                    <div class="blog-content">
+                    <div class="blog-content" id="bgc7">
                         <div class="img">
                             <img src="/assets/albulm_covers/album14.jpg" alt="Nirvana">
                         </div>
-                        <div class="title">
+                        <div class="title" id="text7">
                             <h2>Nirvana: Nevermind</h2>
-                            <p>Designed by Robert Fisher</p>
-                            <p id="y">
+                            <p id="p7">Designed by Robert Fisher</p>
+                            <p id="pp7">
                                 The image of a baby grasping at a dollar bill became one of grunge's coolest and most enduring symbols,
                                 an album cover that captured the attitude of <strong><i>Nevermind</i></strong> and the era. The baby in question,
                                 Spencer Elden, even recreated the photo 25 years later.
                             </p>
                             <a href="https://www.udiscovermusic.com/stories/the-100-greatest-album-covers/"><button type="button" class="btn-blog">Read More</button></a>
-                            <br><br>
-                                <label for="Fontcolor">Choose font color</label>
-                                <select id="dropdown" onchange="myFunction(this.options[this.selectedIndex].value);"> 
-                                    <option value="black">black</option>
-                                    <option value="red">red</option>
-                                    <option value="green">green</option>
-                                    <option value="#FF00F1">purple</option>
-                                </select>
                         </div>
                         <span>Close</span>
                     </div>
                 </div>
 
                 <div id="img-8" class="tabcontent">
-                    <div class="blog-content">
+                    <div class="blog-content" id="bgc8">
                         <div class="img">
                             <img src="/assets/albulm_covers/album13.jpg" alt="DavidBowie">
                         </div>
-                        <div class="title">
+                        <div class="title" id="text8">
                             <h2>David Bowie: Heroes</h2>
-                            <p>Designed by Masayoshi Sukita</p>
-                            <p id="y">
+                            <p id="p8">Designed by Masayoshi Sukita</p>
+                            <p id="pp8">
                                 David Bowie has at least five of the most iconic album covers of all time. From the lightning blot on <i>Aladdin Sane</i> to <i>Ziggy Stardust</i>, it's hard to pick.
                                 But the sublime strangers of this <strong><i>David Bowie</i></strong> photo tells you everything you need to know about the creative madness of his Berlin period.
                                 The cover was memorably defaced by Bowie himself decades later.
                             </p>
                             <a href="https://www.udiscovermusic.com/stories/the-100-greatest-album-covers/"><button type="button" class="btn-blog">Read More</button></a>
-                            <br><br>
-                                <label for="Fontcolor">Choose font color</label>
-                                <select id="dropdown" onchange="myFunction(this.options[this.selectedIndex].value);"> 
-                                    <option value="black">black</option>
-                                    <option value="red">red</option>
-                                    <option value="green">green</option>
-                                    <option value="#FF00F1">purple</option>
-                                </select>
                         </div>
                         <span>Close</span>
                     </div>
                 </div>
 
                 <div id="img-9" class="tabcontent">
-                    <div class="blog-content">
+                    <div class="blog-content" id="bgc9">
                         <div class="img">
                             <img src="/assets/albulm_covers/album12.jpg" alt="EltonJohn">
                         </div>
-                        <div class="title">
+                        <div class="title" id="text9">
                             <h2>Elton John: Don't Shoot Me I'm Only the Piano Player</h2>
-                            <p>Designed by David Larkham and Michael Ross</p>
-                            <p id="y">
+                            <p id="p9">Designed by David Larkham and Michael Ross</p>
+                            <p id="pp9">
                                 Some of Elton's greatest album cover were a bit splashy, others a
                                 little somber. The one for <strong><i>Don't Shoot Me I'm Only the Piano Player</i></strong> was just right, drawing from his soon-to-be-legendary love of movies.
                             </p>
                             <a href="https://www.udiscovermusic.com/stories/the-100-greatest-album-covers/"><button type="button" class="btn-blog">Read More</button></a>
-                            <br><br>
-                                <label for="Fontcolor">Choose font color</label>
-                                <select id="dropdown" onchange="myFunction(this.options[this.selectedIndex].value);"> 
-                                    <option value="black">black</option>
-                                    <option value="red">red</option>
-                                    <option value="green">green</option>
-                                    <option value="#FF00F1">purple</option>
-                                </select>
                         </div>
                         <span>Close</span>
                     </div>
                 </div>
 
                 <div id="img-10" class="tabcontent">
-                    <div class="blog-content">
+                    <div class="blog-content" id="bgc10">
                         <div class="img">
                             <img src="/assets/albulm_covers/album11.jpg" alt="LedZeppelin">
                         </div>
-                        <div class="title">
+                        <div class="title" id="text10">
                             <h2>Led Zeppelin: Led Zeppelin II</h2>
-                            <p>Designed by David Juniper</p>
-                            <p id="t">
+                            <p id="p10">Designed by David Juniper</p>
+                            <p id="pp10">
                                 It was an art-school friend of Jimmy Page's who created this mythic cover by superimposing the band-members over a famous shot of
                                 WWI German fighter pilot the "Red Baron" and his crew. Many Americans wondered what Lucille Ball was doing there but it was actually
                                 French actress Delphine Seyrig.
                             </p>
                             <a href="https://www.udiscovermusic.com/stories/the-100-greatest-album-covers/"><button type="button" class="btn-blog">Read More</button></a>
-                            <br><br>
-                                <label for="Fontcolor">Choose font color</label>
-                                <select id="dropdown" onchange="myFunction(this.options[this.selectedIndex].value);"> 
-                                    <option value="black">black</option>
-                                    <option value="red">red</option>
-                                    <option value="green">green</option>
-                                    <option value="#FF00F1">purple</option>
-                                </select>
                         </div>
                         <span>Close</span>
                     </div>
                 </div>
 
                 <div id="img-11" class="tabcontent">
-                    <div class="blog-content">
+                    <div class="blog-content" id="bgc11">
                         <div class="img">
                             <img src="/assets/albulm_covers/album10.jpg" alt="Madonna">
                         </div>
-                        <div class="title">
+                        <div class="title" id="text11">
                             <h2>Madonna: Madonna</h2>
-                            <p>Designed by Carin Goldberg</p>
-                            <p id="t">
+                            <p id="p11">Designed by Carin Goldberg</p>
+                            <p id="pp11">
                                 All of <strong><i>Madonna's</i></strong> album covers are striking in their own way,
                                 but there's something special about her 1983 self-titled debut. She looks like she can
                                 see everything special that's going to happen to her in the next 40 years.
                             </p>
                             <a href="https://www.udiscovermusic.com/stories/the-100-greatest-album-covers/"><button type="button" class="btn-blog">Read More</button></a>
-                            <br><br><form>
-                                <label for="Fontcolor">Choose font color</label>
-                                <select id="dropdown" onchange="myFunction(this.options[this.selectedIndex].value);"> 
-                                    <option value="black">black</option>
-                                    <option value="red">red</option>
-                                    <option value="green">green</option>
-                                    <option value="#FF00F1">purple</option>
-                                </select>
                         </div>
                         <span>Close</span>
                     </div>
                 </div>
 
                 <div id="img-12" class="tabcontent">
-                    <div class="blog-content" id="color">
+                    <div class="blog-content" id="bgc12">
                         <div class="img">
                             <img src="/assets/albulm_covers/album9.jpg" alt="TheMamasandthePapas">
                         </div>
-                        <div class="title">
+                        <div class="title" id="text12">
                             <h2>The Mamas & The Papas: If You Can Believe Your Eyes and Ears</h2>
-                            <p>Designed by Guy Webster</p>
-                            <p id="t">
+                            <p id="p12">Designed by Guy Webster</p>
+                            <p id="pp12">
                                 With all four band-members together in a bathtub, the cover said more about
                                 <strong>The Mamas & The Papas</strong> than what was probably intended.
                                 The toilet on the original cover of <strong><i>If You Can Believe Your Eyes and Ears</i></strong>
                                 also proved to be a no-no in 1966.
                             </p>
                             <a href="https://www.udiscovermusic.com/stories/the-100-greatest-album-covers/"><button type="button" class="btn-blog">Read More</button></a>
-                            <br><br>
-                                <label for="Fontcolor">Choose font color</label>
-                                <select id="dropdown" onchange="myFunction(this.options[this.selectedIndex].value);"> 
-                                    <option value="black">black</option>
-                                    <option value="red">red</option>
-                                    <option value="green">green</option>
-                                    <option value="#FF00F1">purple</option>
-                                </select>
                         </div>
                         <span>Close</span>
                     </div>
                 </div>
 
             </div>
+
+            <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
         </div>
     </div>
 
@@ -382,8 +313,9 @@
         <p>© 2022 GOLDEN OLDIES. All Rights Reserved</p>
     </section>
 
-    <script src="/javascript/jquery3.6.0.js"></script>
-    <script src="/javascript/album.js"></script>
+    <script type="text/javascript" src="./javascript/main.js"></script>
+    <script type="text/javascript" src="/javascript/jquery3.6.0.js"></script>
+    <script type="text/javascript" src="/javascript/album.js"></script>
 
 </body>
 </html>
